@@ -1,0 +1,8 @@
+Updated include/config files.
+
+Updated Littleroot Town visuals.
+Route 101 Expansion.
+LittlerootCave
+
+Professor Birch/Zigzagoon Script fixed.
+Pokemon Encounters for Route 102 and 103 updated.
