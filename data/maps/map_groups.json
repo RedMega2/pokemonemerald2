@@ -431,7 +431,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "LittlerootCave"
+    "LittlerootCave",
+    "FieryPath_2F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
