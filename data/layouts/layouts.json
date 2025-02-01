@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_2F/border.bin",
       "blockdata_filepath": "data/layouts/FieryPath_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_1F_1R_EAST",
+      "name": "MeteorFalls_1F_1R_East_Layout",
+      "width": 14,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_1F_1R_East/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_1F_1R_East/map.bin"
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "id": "MAP_METEOR_FALLS_1F_1R_EAST",
+  "name": "MeteorFalls_1F_1R_East",
+  "layout": "LAYOUT_METEOR_FALLS_1F_1R_EAST",
+  "music": "MUS_CAVE_OF_ORIGIN",
+  "region_map_section": "MAPSEC_METEOR_FALLS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_METEOR_FALLS_1F_1R",
+      "offset": 12,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_FALLS_1F_1R_EAST",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
