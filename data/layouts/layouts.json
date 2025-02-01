@@ -4450,6 +4450,66 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/MeteorFalls_1F_1R_East/border.bin",
       "blockdata_filepath": "data/layouts/MeteorFalls_1F_1R_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_1F",
+      "name": "MeteorFalls_Ladder_1F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_2F",
+      "name": "MeteorFalls_Ladder_2F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_3F",
+      "name": "MeteorFalls_Ladder_3F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_3F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_4F",
+      "name": "MeteorFalls_Ladder_4F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_4F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_5F",
+      "name": "MeteorFalls_Ladder_5F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_5F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_5F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_LADDER_6F",
+      "name": "MeteorFalls_Ladder_6F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/MeteorFalls_Ladder_6F/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Ladder_6F/map.bin"
     }
   ]
 }

@@ -433,7 +433,13 @@
     "MeteorFalls_StevensCave",
     "LittlerootCave",
     "FieryPath_2F",
-    "MeteorFalls_1F_1R_East"
+    "MeteorFalls_1F_1R_East",
+    "MeteorFalls_Ladder_1F",
+    "MeteorFalls_Ladder_2F",
+    "MeteorFalls_Ladder_3F",
+    "MeteorFalls_Ladder_4F",
+    "MeteorFalls_Ladder_5F",
+    "MeteorFalls_Ladder_6F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
