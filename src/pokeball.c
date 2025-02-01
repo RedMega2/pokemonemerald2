@@ -1491,9 +1491,9 @@ void StartHealthboxSlideIn(u8 battlerId)
 {
     struct Sprite *healthboxSprite = &gSprites[gHealthboxSpriteIds[battlerId]];
 
-    healthboxSprite->sSpeedX = 5;
+    healthboxSprite->sSpeedX = 10; //default is 5
     healthboxSprite->sSpeedY = 0;
-    healthboxSprite->x2 = 0x73;
+    healthboxSprite->x2 = 0x78; //default is 0x73
     healthboxSprite->y2 = 0;
     healthboxSprite->callback = SpriteCB_HealthboxSlideIn;
     if (GetBattlerSide(battlerId) != B_SIDE_PLAYER)

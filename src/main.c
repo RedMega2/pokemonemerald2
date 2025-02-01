@@ -425,7 +425,7 @@ static void SerialIntr(void)
 static void IntrDummy(void)
 {}
 
-static void WaitForVBlank(void)
+static void WaitForVBlank(void) //Velocidad Normal
 {
     gMain.intrCheck &= ~INTR_FLAG_VBLANK;
 
@@ -441,6 +441,61 @@ static void WaitForVBlank(void)
         VBlankIntrWait();
     }
 }
+
+//Velocidad Aumentada
+
+/*extern bool8 gBattleIntroInProgress;
+
+static void WaitForVBlank(void)
+{
+    gMain.intrCheck &= ~INTR_FLAG_VBLANK;
+
+    if (gMain.inBattle) // Solo afecta los combates
+    {
+        if (gBattleIntroInProgress)
+        {
+            // Animación de introducción más fluida
+            if ((gMain.vblankCounter1 % 10) < 1)
+            {
+                if (gWirelessCommType != 0)
+                {
+                    while (!(gMain.intrCheck & INTR_FLAG_VBLANK));
+                }
+                else
+                {
+                    VBlankIntrWait();
+                }
+            }
+        }
+        else
+        {
+            // Aceleración normal después de la introducción
+            if ((gMain.vblankCounter1 % 10) < 1)
+            {
+                if (gWirelessCommType != 0)
+                {
+                    while (!(gMain.intrCheck & INTR_FLAG_VBLANK));
+                }
+                else
+                {
+                    VBlankIntrWait();
+                }
+            }
+        }
+
+        return;
+    }
+
+    // Comportamiento normal fuera de combate
+    if (gWirelessCommType != 0)
+    {
+        while (!(gMain.intrCheck & INTR_FLAG_VBLANK));
+    }
+    else
+    {
+        VBlankIntrWait();
+    }
+}*/
 
 void SetTrainerHillVBlankCounter(u32 *counter)
 {
