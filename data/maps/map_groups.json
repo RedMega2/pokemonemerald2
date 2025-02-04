@@ -33,7 +33,8 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -54,10 +55,13 @@
     "PacifidlogTown",
     "Route101",
     "Route102",
+    "Route102_To_Route101",
     "Route103",
     "Route104",
+    "Route104_West",
     "Route105",
     "Route106",
+    "Route106_South",
     "Route107",
     "Route108",
     "Route109",
@@ -67,6 +71,7 @@
     "Route113",
     "Route114",
     "Route115",
+    "Route115_West",
     "Route116",
     "Route117",
     "Route118",
@@ -93,7 +98,8 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "Route103_North"
+    "Route103_North",
+    "Route102_To_Route101"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -298,7 +304,9 @@
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",
-    "Route104_PrettyPetalFlowerShop"
+    "Route104_PrettyPetalFlowerShop",
+    "Route104_PrettyPetalFlowerShop_Basement",
+    "Route104_PrettyPetalFlowerShop_SecretRoom"
   ],
   "gMapGroup_IndoorRoute111": [
     "Route111_WinstrateFamilysHouse",
@@ -430,17 +438,7 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave",
-    "LittlerootCave",
-    "FieryPath_2F",
-    "MeteorFalls_1F_1R_East",
-    "MeteorFalls_Ladder_1F",
-    "MeteorFalls_Ladder_2F",
-    "MeteorFalls_Ladder_3F",
-    "MeteorFalls_Ladder_4F",
-    "MeteorFalls_Ladder_5F",
-    "MeteorFalls_Ladder_6F",
-    "BedOfHoenn"
+    "MeteorFalls_StevensCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -467,6 +465,9 @@
     "SecretBase_YellowCave4",
     "SecretBase_Tree4",
     "SecretBase_Shrub4",
+    "SuperSecretBase_Tree1",
+    "SuperSecretBase_Tree2",
+    "SuperSecretBase_BlueCave1",
     "BattleColosseum_2P",
     "TradeCenter",
     "RecordCorner",
@@ -631,5 +632,20 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup_NewDungeons": [
+    "LittlerootCave",
+    "FieryPath_2F",
+    "MeteorFalls_1F_1R_East",
+    "MeteorFalls_Ladder_1F",
+    "MeteorFalls_Ladder_2F",
+    "MeteorFalls_Ladder_3F",
+    "MeteorFalls_Ladder_4F",
+    "MeteorFalls_Ladder_5F",
+    "MeteorFalls_Ladder_6F",
+    "BedOfHoenn",
+    "PetalburgWoods_East",
+    "AbandonedResort",
+    "AbandonedResort1F_SouthwestRooms"
   ]
 }

@@ -1174,3 +1174,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MeteorFalls_Ladder_6F/scripts.inc"
 
 	.include "data/maps/BedOfHoenn/scripts.inc"
+
+	.include "data/maps/PetalburgWoods_East/scripts.inc"
+
+	.include "data/maps/Route102_To_Route101/scripts.inc"
