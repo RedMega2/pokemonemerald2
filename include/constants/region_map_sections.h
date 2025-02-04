@@ -214,7 +214,10 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+//custom mapsecs here
+#define MAPSEC_BED_OF_HOENN					0xD5
+//MAPSEC_NONE must always remain as the immediate last section
+#define MAPSEC_NONE                         0xD6
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

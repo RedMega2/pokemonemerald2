@@ -439,7 +439,8 @@
     "MeteorFalls_Ladder_3F",
     "MeteorFalls_Ladder_4F",
     "MeteorFalls_Ladder_5F",
-    "MeteorFalls_Ladder_6F"
+    "MeteorFalls_Ladder_6F",
+    "BedOfHoenn"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

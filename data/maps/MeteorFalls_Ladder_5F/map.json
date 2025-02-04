@@ -3,7 +3,7 @@
   "name": "MeteorFalls_Ladder_5F",
   "layout": "LAYOUT_METEOR_FALLS_LADDER_5F",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region_map_section": "MAPSEC_METEOR_FALLS",
+  "region_map_section": "MAPSEC_BED_OF_HOENN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

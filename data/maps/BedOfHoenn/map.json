@@ -1,7 +1,7 @@
 {
-  "id": "MAP_METEOR_FALLS_LADDER_6F",
-  "name": "MeteorFalls_Ladder_6F",
-  "layout": "LAYOUT_METEOR_FALLS_LADDER_6F",
+  "id": "MAP_BED_OF_HOENN",
+  "name": "BedOfHoenn",
+  "layout": "LAYOUT_BED_OF_HOENN",
   "music": "MUS_CAVE_OF_ORIGIN",
   "region_map_section": "MAPSEC_BED_OF_HOENN",
   "requires_flash": false,
@@ -10,27 +10,14 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
-    {
-      "x": 2,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_METEOR_FALLS_LADDER_5F",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 5,
-      "y": 5,
-      "elevation": 0,
-      "dest_map": "MAP_METEOR_FALLS_LADDER_6F",
-      "dest_warp_id": "0"
-    }
+
   ],
   "coord_events": [
 
