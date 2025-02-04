@@ -3467,10 +3467,9 @@ BattleScript_EffectMist::
 	attackstring
 	ppreduce
 	setmist
+	printfromtable gMistUsedStringIds
 	attackanimation
 	waitanimation
-	printfromtable gMistUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectFocusEnergy::
@@ -3479,10 +3478,9 @@ BattleScript_EffectFocusEnergy::
 	ppreduce
 	jumpifstatus2 BS_ATTACKER, STATUS2_FOCUS_ENERGY_ANY, BattleScript_ButItFailed
 	setfocusenergy BS_TARGET
+	printfromtable gFocusEnergyUsedStringIds
 	attackanimation
 	waitanimation
-	printfromtable gFocusEnergyUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectConfuse::
@@ -3985,10 +3983,9 @@ BattleScript_EffectLockOn::
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	setalwayshitflag
+	printstring STRINGID_PKMNTOOKAIM
 	attackanimation
 	waitanimation
-	printstring STRINGID_PKMNTOOKAIM
-	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectSketch::
@@ -4048,10 +4045,9 @@ BattleScript_EffectSpite::
 	ppreduce
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	tryspiteppreduce BattleScript_ButItFailed
+	printstring STRINGID_PKMNREDUCEDPP
 	attackanimation
 	waitanimation
-	printstring STRINGID_PKMNREDUCEDPP
-	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectHealBell::
@@ -4162,12 +4158,11 @@ BattleScript_DoGhostCurse::
 	cursetarget BattleScript_ButItFailed
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
 	setbyte sB_ANIM_TURN, 0
+	printstring STRINGID_PKMNLAIDCURSE
 	attackanimation
 	waitanimation
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
-	printstring STRINGID_PKMNLAIDCURSE
-	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
 	goto BattleScript_MoveEnd
 
@@ -4208,10 +4203,9 @@ BattleScript_EffectForesight::
 	jumpifstatus2 BS_TARGET, STATUS2_FORESIGHT, BattleScript_ButItFailed
 	setforesight
 BattleScript_IdentifiedFoe:
+	printstring STRINGID_PKMNIDENTIFIED
 	attackanimation
 	waitanimation
-	printstring STRINGID_PKMNIDENTIFIED
-	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectPerishSong::
@@ -6746,8 +6740,8 @@ BattleScript_TurnHeal:
 	end2
 
 BattleScript_AquaRingHeal::
-	playanimation BS_ATTACKER, B_ANIM_AQUA_RING_HEAL
 	printstring STRINGID_AQUARINGHEAL
+	playanimation BS_ATTACKER, B_ANIM_AQUA_RING_HEAL
 	goto BattleScript_TurnHeal
 
 BattleScript_PrintMonIsRooted::
