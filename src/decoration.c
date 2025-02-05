@@ -90,7 +90,10 @@ struct DecorRearrangementDataBuffer
 struct DecorationPCContext
 {
     u8 *items;
-    u8 *pos;
+	u16 *pos;
+    /*original size of decoration coordinates
+	u8 *pos;
+	*/
     u8 size;
     u8 isPlayerRoom;
 };
@@ -1692,7 +1695,7 @@ static void PlaceDecoration_(u8 taskId)
         if (sDecorationContext.items[i] == DECOR_NONE)
         {
             sDecorationContext.items[i] = gCurDecorationItems[gCurDecorationIndex];
-            sDecorationContext.pos[i] = ((gTasks[taskId].tCursorX - MAP_OFFSET) << 4) + (gTasks[taskId].tCursorY - MAP_OFFSET);
+            sDecorationContext.pos[i] = ((gTasks[taskId].tCursorX - MAP_OFFSET) << 8) + (gTasks[taskId].tCursorY - MAP_OFFSET);
             break;
         }
     }

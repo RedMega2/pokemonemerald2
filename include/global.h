@@ -590,7 +590,10 @@ struct SecretBase
     /*0x1AAC*/ u8 numTimesEntered;
     /*0x1AAD*/ u8 unused;
     /*0x1AAE*/ u8 decorations[DECOR_MAX_SECRET_BASE];
-    /*0x1ABE*/ u8 decorationPositions[DECOR_MAX_SECRET_BASE];
+			   u16 decorationPositions[DECOR_MAX_SECRET_BASE];
+	/*original size of decoration coordinates
+    0x1ABE u8 decorationPositions[DECOR_MAX_SECRET_BASE];
+	*/
     /*0x1ACE*/ //u8 padding[2];
     /*0x1AD0*/ struct SecretBaseParty party;
 };
@@ -1051,7 +1054,7 @@ struct SaveBlock1
     /*0x169C*/ struct BerryTree berryTrees[BERRY_TREES_COUNT];
     /*0x1A9C*/ struct SecretBase secretBases[SECRET_BASES_COUNT];
     /*0x271C*/ u8 playerRoomDecorations[DECOR_MAX_PLAYERS_HOUSE];
-    /*0x2728*/ u8 playerRoomDecorationPositions[DECOR_MAX_PLAYERS_HOUSE];
+    /*0x2728*/ u16 playerRoomDecorationPositions[DECOR_MAX_PLAYERS_HOUSE];
     /*0x2734*/ u8 decorationDesks[10];
     /*0x273E*/ u8 decorationChairs[10];
     /*0x2748*/ u8 decorationPlants[10];

@@ -1178,3 +1178,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PetalburgWoods_East/scripts.inc"
 
 	.include "data/maps/Route102_To_Route101/scripts.inc"
+
+	.include "data/maps/AbandonedResort/scripts.inc"
+
+	.include "data/maps/AbandonedResort1F_SouthwestRooms/scripts.inc"
+
+	.include "data/maps/Route104_West/scripts.inc"
+
+	.include "data/maps/Route106_South/scripts.inc"
+
+	.include "data/maps/Route115_West/scripts.inc"
+
+	.include "data/maps/Route104_PrettyPetalFlowerShop_Basement/scripts.inc"
+
+	.include "data/maps/Route104_PrettyPetalFlowerShop_SecretRoom/scripts.inc"

@@ -524,7 +524,10 @@ void InitSecretBaseAppearance(bool8 hidePC)
     u16 secretBaseIdx;
     s16 x, y = 0;
     u8 *decorations;
+    u16 *decorPos;
+	/*original size of decoration coordinates
     u8 *decorPos;
+	*/
 
     if (CurMapIsSecretBase())
     {
@@ -534,7 +537,7 @@ void InitSecretBaseAppearance(bool8 hidePC)
         for (x = 0; x < DECOR_MAX_SECRET_BASE; x++)
         {
             if (decorations[x] > 0 && decorations[x] <= NUM_DECORATIONS && gDecorations[decorations[x]].permission != DECORPERM_SPRITE)
-                ShowDecorationOnMap((decorPos[x] >> 4) + MAP_OFFSET, (decorPos[x] & 0xF) + MAP_OFFSET, decorations[x]);
+                ShowDecorationOnMap((decorPos[x] >> 8) + MAP_OFFSET, (decorPos[x] & 0xFF) + MAP_OFFSET, decorations[x]);
         }
 
         if (secretBaseIdx != 0)
@@ -556,7 +559,10 @@ void InitSecretBaseDecorationSprites(void)
 {
     u8 i;
     u8 *decorations;
+    u16 *decorationPositions;
+	/*original size of decoration coordinates
     u8 *decorationPositions;
+	*/
     u8 objectEventId;
     u8 metatileBehavior;
     u8 category;
@@ -595,9 +601,12 @@ void InitSecretBaseDecorationSprites(void)
 
             if (objectEventId == gMapHeader.events->objectEventCount)
                 continue;
-
+			gSpecialVar_0x8006 = decorationPositions[i] >> 8;
+            gSpecialVar_0x8007 = decorationPositions[i] & 0xFF;
+			/*original operation to get coordinates of secret base decorations
             gSpecialVar_0x8006 = decorationPositions[i] >> 4;
             gSpecialVar_0x8007 = decorationPositions[i] & 0xF;
+			*/
             metatileBehavior = MapGridGetMetatileBehaviorAt(gSpecialVar_0x8006 + MAP_OFFSET, gSpecialVar_0x8007 + MAP_OFFSET);
             if (MetatileBehavior_HoldsSmallDecoration(metatileBehavior) == TRUE
              || MetatileBehavior_HoldsLargeDecoration(metatileBehavior) == TRUE)
