@@ -23,20 +23,6 @@
       "elevation": 0,
       "dest_map": "MAP_FIERY_PATH",
       "dest_warp_id": "2"
-    },
-    {
-      "x": 26,
-      "y": 5,
-      "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_2F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 3,
-      "y": 35,
-      "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_2F",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
