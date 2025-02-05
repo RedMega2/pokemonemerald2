@@ -22,6 +22,11 @@
       "map": "MAP_ROUTE101",
       "offset": -4,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE102",
+      "offset": -30,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -43,14 +48,14 @@
     {
       "type": "secret_base",
       "x": 10,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "secret_base_id": "SUPER_SECRET_BASE_TREE2_1"
     },
     {
       "type": "secret_base",
       "x": 11,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "secret_base_id": "SUPER_SECRET_BASE_TREE2_2"
     }
