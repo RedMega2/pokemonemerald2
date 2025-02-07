@@ -187,6 +187,10 @@
 #define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
 #define METATILE_Fallarbor_RedRockWall               0x269
 
+// gTileset_Forest
+#define METATILE_Forest_SecretBigTreeLeft   0x2A9
+#define METATILE_Forest_SecretBigTreeRight  0x2AA
+
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F
 #define METATILE_Fortree_BridgeOverGrass_Raised            0x24E
@@ -390,9 +394,11 @@
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
 
 // gTileset_Petalburg
-#define METATILE_Petalburg_Door_BirchsLab   0x249
-#define METATILE_Petalburg_Door_Littleroot  0x248
-#define METATILE_Petalburg_Door_Oldale      0x287
+#define METATILE_Petalburg_Door_BirchsLab      0x249
+#define METATILE_Petalburg_Door_Littleroot     0x248
+#define METATILE_Petalburg_Door_Oldale         0x287
+#define METATILE_Petalburg_SecretBigTreeLeft   0x2A9
+#define METATILE_Petalburg_SecretBigTreeRight  0x2AA
 
 // gTileset_PetalburgGym
 #define METATILE_PetalburgGym_Door                0x224
@@ -707,6 +713,10 @@
 #define METATILE_SecretBase_YellowBalloon               0x340
 #define METATILE_SecretBase_YellowBrick_Bottom          0x22E
 #define METATILE_SecretBase_YellowBrick_Top             0x226
+
+// gTileset_SecretBaseTree
+#define METATILE_SecretBaseTree_HighGround           0x3A3
+#define METATILE_SecretBaseTree_MB_SECRET_BASE_WALL  0x344
 
 // gTileset_Shop
 #define METATILE_Shop_Door_Elevator   0x285

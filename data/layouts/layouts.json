@@ -94,7 +94,7 @@
     {
       "id": "LAYOUT_LITTLEROOT_TOWN",
       "name": "LittlerootTown_Layout",
-      "width": 20,
+      "width": 30,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4660,6 +4660,26 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/AbandonedResort1F_SouthwestRooms/border.bin",
       "blockdata_filepath": "data/layouts/AbandonedResort1F_SouthwestRooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE107_NORTH",
+      "name": "Route107_North_Layout",
+      "width": 15,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Route107_North/border.bin",
+      "blockdata_filepath": "data/layouts/Route107_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_EAST",
+      "name": "LittlerootTown_East_Layout",
+      "width": 40,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Forest",
+      "border_filepath": "data/layouts/LittlerootTown_East/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_East/map.bin"
     }
   ]
 }

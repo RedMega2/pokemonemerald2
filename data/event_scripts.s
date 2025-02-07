@@ -1192,3 +1192,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route104_PrettyPetalFlowerShop_Basement/scripts.inc"
 
 	.include "data/maps/Route104_PrettyPetalFlowerShop_SecretRoom/scripts.inc"
+
+	.include "data/maps/Route107_North/scripts.inc"
+
+	.include "data/maps/LittlerootTown_East/scripts.inc"
