@@ -4680,6 +4680,26 @@
       "secondary_tileset": "gTileset_Forest",
       "border_filepath": "data/layouts/LittlerootTown_East/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_2F",
+      "name": "VictoryRoad_2F_Layout",
+      "width": 24,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_2F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_SUMMIT",
+      "name": "VictoryRoad_Summit_Layout",
+      "width": 22,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/VictoryRoad_Summit/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_Summit/map.bin"
     }
   ]
 }

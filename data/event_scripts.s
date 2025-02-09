@@ -1196,3 +1196,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route107_North/scripts.inc"
 
 	.include "data/maps/LittlerootTown_East/scripts.inc"
+
+	.include "data/maps/VictoryRoad_2F/scripts.inc"
+
+	.include "data/maps/VictoryRoad_Summit/scripts.inc"
