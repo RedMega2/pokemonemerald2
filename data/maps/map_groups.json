@@ -34,6 +34,7 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
+	"gMapGroup_NewOutdoors",
     "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
@@ -55,13 +56,10 @@
     "PacifidlogTown",
     "Route101",
     "Route102",
-    "Route102_To_Route101",
     "Route103",
     "Route104",
-    "Route104_West",
     "Route105",
     "Route106",
-    "Route106_South",
     "Route107",
     "Route108",
     "Route109",
@@ -71,7 +69,6 @@
     "Route113",
     "Route114",
     "Route115",
-    "Route115_West",
     "Route116",
     "Route117",
     "Route118",
@@ -97,10 +94,7 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "Route103_North",
-    "Route107_North",
-    "LittlerootTown_East"
+    "Underwater_Route125"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -650,5 +644,14 @@
     "AbandonedResort1F_SouthwestRooms",
     "VictoryRoad_2F",
     "VictoryRoad_Summit"
+  ],
+  "gMapGroup_NewOutdoors": [
+    "LittlerootTown_East",
+    "Route102_To_Route101",
+    "Route103_North",
+    "Route104_West",
+    "Route106_South",
+    "Route107_North",
+    "Route115_West"
   ]
 }
