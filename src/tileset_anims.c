@@ -43,6 +43,14 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+
+//Start declaration of custom TilesetAnim
+
+static void TilesetAnim_Secret_Base(u16);
+static void TilesetAnim_Forest(u16);
+
+//End declaration of custom TilesetAnim
+
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -74,6 +82,20 @@ static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
 
+//Start declaration of custom QueueAnimTiles
+
+static void QueueAnimTiles_Secret_Base_Flower(u16);
+static void QueueAnimTiles_Secret_Base_Water(u16);
+static void QueueAnimTiles_Secret_Base_Waterfall(u16);
+static void QueueAnimTiles_Forest_BlueBlossom(u16);
+static void QueueAnimTiles_Forest_RedBlossom(u16);
+static void QueueAnimTiles_Forest_BlueRose(u16);
+static void QueueAnimTiles_Forest_Rose(u16);
+static void QueueAnimTiles_Forest_Flower(u16);
+static void QueueAnimTiles_Dewford_Weed(u16);
+
+//End declaration of custom QueueAnimTiles
+
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/2.4bpp");
@@ -85,6 +107,96 @@ const u16 *const gTilesetAnims_General_Flower[] = {
     gTilesetAnims_General_Flower_Frame0,
     gTilesetAnims_General_Flower_Frame2
 };
+
+// Start custom gTilesetAnims
+
+const u16 gTilesetAnims_Secret_Base_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/secret_base/anim/flower/flower_0.4bpp");
+const u16 gTilesetAnims_Secret_Base_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/secret_base/anim/flower/flower_1.4bpp");
+const u16 gTilesetAnims_Secret_Base_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/secret_base/anim/flower/flower_2.4bpp");
+
+const u16 *const gTilesetAnims_Secret_Base_Flower[] = {
+    gTilesetAnims_Secret_Base_Flower_Frame0,
+    gTilesetAnims_Secret_Base_Flower_Frame1,
+    gTilesetAnims_Secret_Base_Flower_Frame0,
+    gTilesetAnims_Secret_Base_Flower_Frame2
+};
+
+const u16 gTilesetAnims_Forest_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/forest/anim/flower/flower_0.4bpp");
+const u16 gTilesetAnims_Forest_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/forest/anim/flower/flower_1.4bpp");
+const u16 gTilesetAnims_Forest_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/forest/anim/flower/flower_2.4bpp");
+
+const u16 *const gTilesetAnims_Forest_Flower[] = {
+    gTilesetAnims_Forest_Flower_Frame0,
+    gTilesetAnims_Forest_Flower_Frame1,
+    gTilesetAnims_Forest_Flower_Frame0,
+    gTilesetAnims_Forest_Flower_Frame2
+};
+
+const u16 gTilesetAnims_Forest_BlueBlossom_Frame0[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_blossom/blue_blossom_0.4bpp");
+const u16 gTilesetAnims_Forest_BlueBlossom_Frame1[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_blossom/blue_blossom_1.4bpp");
+const u16 gTilesetAnims_Forest_BlueBlossom_Frame2[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_blossom/blue_blossom_2.4bpp");
+const u16 gTilesetAnims_Forest_BlueBlossom_Frame3[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_blossom/blue_blossom_3.4bpp");
+const u16 gTilesetAnims_Forest_BlueBlossom_Frame4[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_blossom/blue_blossom_4.4bpp");
+
+const u16 *const gTilesetAnims_Forest_BlueBlossom[] = {
+    gTilesetAnims_Forest_BlueBlossom_Frame0,
+    gTilesetAnims_Forest_BlueBlossom_Frame1,
+    gTilesetAnims_Forest_BlueBlossom_Frame2,
+    gTilesetAnims_Forest_BlueBlossom_Frame3,
+    gTilesetAnims_Forest_BlueBlossom_Frame4
+};
+
+const u16 gTilesetAnims_Forest_RedBlossom_Frame0[] = INCBIN_U16("data/tilesets/secondary/forest/anim/red_blossom/red_blossom_0.4bpp");
+const u16 gTilesetAnims_Forest_RedBlossom_Frame1[] = INCBIN_U16("data/tilesets/secondary/forest/anim/red_blossom/red_blossom_1.4bpp");
+const u16 gTilesetAnims_Forest_RedBlossom_Frame2[] = INCBIN_U16("data/tilesets/secondary/forest/anim/red_blossom/red_blossom_2.4bpp");
+const u16 gTilesetAnims_Forest_RedBlossom_Frame3[] = INCBIN_U16("data/tilesets/secondary/forest/anim/red_blossom/red_blossom_3.4bpp");
+const u16 gTilesetAnims_Forest_RedBlossom_Frame4[] = INCBIN_U16("data/tilesets/secondary/forest/anim/red_blossom/red_blossom_4.4bpp");
+
+const u16 *const gTilesetAnims_Forest_RedBlossom[] = {
+    gTilesetAnims_Forest_RedBlossom_Frame0,
+    gTilesetAnims_Forest_RedBlossom_Frame1,
+    gTilesetAnims_Forest_RedBlossom_Frame2,
+    gTilesetAnims_Forest_RedBlossom_Frame3,
+    gTilesetAnims_Forest_RedBlossom_Frame4
+};
+
+const u16 gTilesetAnims_Forest_BlueRose_Frame0[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_rose/blue_rose_0.4bpp");
+const u16 gTilesetAnims_Forest_BlueRose_Frame1[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_rose/blue_rose_1.4bpp");
+const u16 gTilesetAnims_Forest_BlueRose_Frame2[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_rose/blue_rose_2.4bpp");
+const u16 gTilesetAnims_Forest_BlueRose_Frame3[] = INCBIN_U16("data/tilesets/secondary/forest/anim/blue_rose/blue_rose_3.4bpp");
+
+const u16 *const gTilesetAnims_Forest_BlueRose[] = {
+    gTilesetAnims_Forest_BlueRose_Frame0,
+    gTilesetAnims_Forest_BlueRose_Frame1,
+    gTilesetAnims_Forest_BlueRose_Frame2,
+    gTilesetAnims_Forest_BlueRose_Frame3
+};
+
+const u16 gTilesetAnims_Forest_Rose_Frame0[] = INCBIN_U16("data/tilesets/secondary/forest/anim/rose/rose_0.4bpp");
+const u16 gTilesetAnims_Forest_Rose_Frame1[] = INCBIN_U16("data/tilesets/secondary/forest/anim/rose/rose_1.4bpp");
+const u16 gTilesetAnims_Forest_Rose_Frame2[] = INCBIN_U16("data/tilesets/secondary/forest/anim/rose/rose_2.4bpp");
+const u16 gTilesetAnims_Forest_Rose_Frame3[] = INCBIN_U16("data/tilesets/secondary/forest/anim/rose/rose_3.4bpp");
+
+const u16 *const gTilesetAnims_Forest_Rose[] = {
+    gTilesetAnims_Forest_Rose_Frame0,
+    gTilesetAnims_Forest_Rose_Frame1,
+    gTilesetAnims_Forest_Rose_Frame2,
+    gTilesetAnims_Forest_Rose_Frame3
+};
+
+const u16 gTilesetAnims_Dewford_Weed_Frame0[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/weed/0.4bpp");
+const u16 gTilesetAnims_Dewford_Weed_Frame1[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/weed/1.4bpp");
+const u16 gTilesetAnims_Dewford_Weed_Frame2[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/weed/2.4bpp");
+const u16 gTilesetAnims_Dewford_Weed_Frame3[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/weed/3.4bpp");
+
+const u16 *const gTilesetAnims_Dewford_Weed[] = {
+    gTilesetAnims_Dewford_Weed_Frame0,
+    gTilesetAnims_Dewford_Weed_Frame1,
+    gTilesetAnims_Dewford_Weed_Frame2,
+    gTilesetAnims_Dewford_Weed_Frame3
+};
+
+// End custom gTilesetAnims
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
 const u16 gTilesetAnims_General_Water_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/water/1.4bpp");
@@ -615,6 +727,24 @@ static void _InitSecondaryTilesetAnimation(void)
         gMapHeader.mapLayout->secondaryTileset->callback();
 }
 
+// Start custom InitTilesetAnim
+
+void InitTilesetAnim_Secret_Base(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Secret_Base;
+}
+
+void InitTilesetAnim_Forest(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Forest;
+}
+
+// End custom InitTilesetAnim
+
 void InitTilesetAnim_General(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -628,6 +758,42 @@ void InitTilesetAnim_Building(void)
     sPrimaryTilesetAnimCounterMax = 256;
     sPrimaryTilesetAnimCallback = TilesetAnim_Building;
 }
+
+//Start custom TilesetAnim
+
+static void TilesetAnim_Secret_Base(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Secret_Base_Flower(timer / 16);
+	if (timer % 16 == 1)
+		QueueAnimTiles_Secret_Base_Waterfall(timer / 16);
+	if (timer % 16 == 1)
+		QueueAnimTiles_Secret_Base_Water(timer / 16);
+}
+
+static void TilesetAnim_Forest(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Forest_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Forest_BlueBlossom(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_Forest_RedBlossom(timer / 16);
+    if (timer % 16 == 3)
+        QueueAnimTiles_Forest_BlueRose(timer / 16);
+    if (timer % 16 == 4)
+        QueueAnimTiles_Forest_Rose(timer / 16);
+    if (timer % 16 == 5)
+        QueueAnimTiles_General_Water(timer / 16);
+    if (timer % 16 == 6)
+        QueueAnimTiles_General_SandWaterEdge(timer / 16);
+    if (timer % 16 == 7)
+        QueueAnimTiles_General_Waterfall(timer / 16);
+    if (timer % 16 == 8)
+        QueueAnimTiles_General_LandWaterEdge(timer / 16);
+}
+
+//End custom TilesetAnim
 
 static void TilesetAnim_General(u16 timer)
 {
@@ -648,6 +814,64 @@ static void TilesetAnim_Building(u16 timer)
     if (timer % 8 == 0)
         QueueAnimTiles_Building_TVTurnedOn(timer / 8);
 }
+
+// Start custom QueueAnimTiles
+
+static void QueueAnimTiles_Secret_Base_Flower(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Secret_Base_Flower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Secret_Base_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(844)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Secret_Base_Waterfall(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(992)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Secret_Base_Water(u16 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_General_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(928)), 30 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Forest_Flower(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Forest_Flower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Forest_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Forest_BlueBlossom(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Forest_BlueBlossom);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Forest_BlueBlossom[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(746)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Forest_RedBlossom(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Forest_RedBlossom);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Forest_RedBlossom[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(762)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Forest_BlueRose(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Forest_BlueRose);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Forest_BlueRose[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(714)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Forest_Rose(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Forest_Rose);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Forest_Rose[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(730)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Dewford_Weed(u16 timer)
+{
+	u16 i = timer % ARRAY_COUNT(gTilesetAnims_Dewford_Weed);
+	AppendTilesetAnimToBuffer(gTilesetAnims_Dewford_Weed[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(742)), 4 * TILE_SIZE_4BPP);
+}
+
+// End custom QueueAnimTiles
 
 static void QueueAnimTiles_General_Flower(u16 timer)
 {
@@ -861,6 +1085,8 @@ static void TilesetAnim_Dewford(u16 timer)
 {
     if (timer % 8 == 0)
         QueueAnimTiles_Dewford_Flag(timer / 8);
+	if (timer % 8 == 0)
+		QueueAnimTiles_Dewford_Weed(timer / 8);
 }
 
 static void TilesetAnim_Slateport(u16 timer)
