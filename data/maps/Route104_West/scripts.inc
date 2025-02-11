@@ -7,8 +7,8 @@ Route104_West_EventScript_Sign::
 
 Route104_West_Text_Sign:
 	.string "Remember to pay attention to your\n"
-	.string "surroundings\p"
+	.string "surroundings.\p"
 	.string "Secret passages are often hidden, but\n"
-	.string "there's always an indication.\p"
-	.string "Like an item lying a few steps behind\n"
-	.string "a seemingly impassable tree wall."
+	.string "there's always a clue.\p"
+	.string "Like missing shadows behind a tree or\n"
+	.string "misplaced rubble on the floor.$"

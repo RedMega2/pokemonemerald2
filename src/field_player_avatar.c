@@ -1357,6 +1357,17 @@ bool8 IsPlayerFacingSurfableFishableWater(void)
         return FALSE;
 }
 
+//Custom function to allow fishing but not surfing
+bool8 IsPlayerFacingHighFishingSpot(void)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    s16 x = playerObjEvent->currentCoords.x;
+    s16 y = playerObjEvent->currentCoords.y;
+
+    MoveCoords(playerObjEvent->facingDirection, &x, &y);
+    return MetatileBehavior_IsHighFishingSpot(MapGridGetMetatileBehaviorAt(x, y));
+}
+
 void ClearPlayerAvatarInfo(void)
 {
     memset(&gPlayerAvatar, 0, sizeof(struct PlayerAvatar));

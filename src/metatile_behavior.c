@@ -133,6 +133,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_SIDEWAYS_STAIRS_RIGHT_SIDE_BOTTOM]  = TILE_FLAG_UNUSED,
     [MB_SIDEWAYS_STAIRS_LEFT_SIDE_BOTTOM]   = TILE_FLAG_UNUSED,
     [MB_ROCK_STAIRS]                        = TILE_FLAG_UNUSED,
+    [MB_HIGH_FISHING_SPOT]                  = TILE_FLAG_UNUSED,
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
@@ -1181,6 +1182,11 @@ bool8 MetatileBehavior_IsSurfableFishableWater(u8 metatileBehavior)
         return TRUE;
     else
         return FALSE;
+}
+
+bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior)
+{
+	return metatileBehavior == MB_HIGH_FISHING_SPOT;
 }
 
 bool8 MetatileBehavior_IsMtPyreHole(u8 metatileBehavior)
