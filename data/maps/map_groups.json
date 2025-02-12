@@ -34,7 +34,7 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-	"gMapGroup_NewOutdoors",
+    "gMapGroup_NewOutdoors",
     "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
@@ -628,6 +628,16 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
+  "gMapGroup_NewOutdoors": [
+    "LittlerootTown_East",
+    "Route102_To_Route101",
+    "Route103_North",
+    "Route104_West",
+    "Route106_South",
+    "Route107_North",
+    "Route115_West",
+    "Daycare_Garden"
+  ],
   "gMapGroup_NewDungeons": [
     "LittlerootCave",
     "FieryPath_2F",
@@ -644,14 +654,5 @@
     "AbandonedResort1F_SouthwestRooms",
     "VictoryRoad_2F",
     "VictoryRoad_Summit"
-  ],
-  "gMapGroup_NewOutdoors": [
-    "LittlerootTown_East",
-    "Route102_To_Route101",
-    "Route103_North",
-    "Route104_West",
-    "Route106_South",
-    "Route107_North",
-    "Route115_West"
   ]
 }

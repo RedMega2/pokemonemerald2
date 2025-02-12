@@ -10777,59 +10777,59 @@
                 "species": "SPECIES_DITTO"
               },
               {
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_WHISMUR"
+              },
+              {
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_DITTO"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_LOUDRED"
+              },
+              {
+                "min_level": 41,
+                "max_level": 41,
                 "species": "SPECIES_DITTO"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
-                "species": "SPECIES_ONIX"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_MAROWAK"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_PARASECT"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_DUGTRIO"
+                "min_level": 36,
+                "max_level": 36,
+                "species": "SPECIES_WHISMUR"
               },
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_LOUDRED"
               },
               {
                 "min_level": 42,
                 "max_level": 42,
-                "species": "SPECIES_DUGTRIO"
+                "species": "SPECIES_DITTO"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_DUNSPARCE"
+                "min_level": 38,
+                "max_level": 38,
+                "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
-                "species": "SPECIES_DUGTRIO"
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_DITTO"
+              },
+              {
+                "min_level": 44,
+                "max_level": 44,
+                "species": "SPECIES_LOUDRED"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_DITTO"
               }
             ]
           }
@@ -10841,14 +10841,39 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 45,
-                "max_level": 46,
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 41,
+                "max_level": 41,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 42,
+                "max_level": 42,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 46,
                 "max_level": 46,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 47,
@@ -10856,21 +10881,11 @@
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 47,
-                "max_level": 47,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 48,
                 "max_level": 48,
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 49,
                 "max_level": 49,
                 "species": "SPECIES_SMEARGLE"
@@ -10881,24 +10896,9 @@
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 49,
-                "max_level": 49,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
-                "min_level": 49,
-                "max_level": 49,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_SMEARGLE"
               }
             ]
           }
@@ -10910,14 +10910,39 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 45,
-                "max_level": 46,
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 41,
+                "max_level": 41,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 42,
+                "max_level": 42,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SMEARGLE"
+              },
+              {
+                "min_level": 46,
                 "max_level": 46,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 47,
@@ -10925,21 +10950,11 @@
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 47,
-                "max_level": 47,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 48,
                 "max_level": 48,
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 49,
                 "max_level": 49,
                 "species": "SPECIES_SMEARGLE"
@@ -10950,24 +10965,9 @@
                 "species": "SPECIES_SMEARGLE"
               },
               {
-                "min_level": 49,
-                "max_level": 49,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
-                "min_level": 49,
-                "max_level": 49,
-                "species": "SPECIES_MR_MIME"
-              },
-              {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_SMEARGLE"
               }
             ]
           }

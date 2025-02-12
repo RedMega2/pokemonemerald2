@@ -1200,3 +1200,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VictoryRoad_2F/scripts.inc"
 
 	.include "data/maps/VictoryRoad_Summit/scripts.inc"
+
+	.include "data/maps/Daycare_Garden/scripts.inc"
