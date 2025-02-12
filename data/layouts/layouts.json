@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_FIERY_PATH_2F",
       "name": "FieryPath_2F_Layout",
-      "width": 30,
-      "height": 45,
+      "width": 45,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_2F/border.bin",
