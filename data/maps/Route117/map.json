@@ -116,7 +116,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIKACHU)",
       "x": 45,
-      "y": 3,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -357,7 +357,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "VAR_TEMP_0",
-      "script": "NULL",
+      "script": "Daycare_Garden_Pokemon0_Cry",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -370,7 +370,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "VAR_TEMP_1",
-      "script": "NULL",
+      "script": "Daycare_Garden_Pokemon1_Cry",
       "flag": "FLAG_TEMP_2"
     }
   ],

@@ -6,6 +6,24 @@ Daycare_Garden_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Daycare_Garden_OnTransition
 	.byte 0
 
+Daycare_Garden_Pokemon0_Cry::
+	lock
+	msgbox Daycare_Garden_Text_Pokemon_Dots, MSGBOX_DEFAULT
+	getdaycarespecies VAR_TEMP_0, VAR_TEMP_1
+	playmoncry VAR_TEMP_0, CRY_MODE_NORMAL
+	waitmoncry
+	release
+	end
+
+Daycare_Garden_Pokemon1_Cry::
+	lock
+	msgbox Daycare_Garden_Text_Pokemon_Dots, MSGBOX_DEFAULT
+	getdaycarespecies VAR_TEMP_0, VAR_TEMP_1
+	playmoncry VAR_TEMP_1, CRY_MODE_NORMAL
+	waitmoncry
+	release
+	end
+
 Daycare_Garden_OnTransition:
 	call Daycare_Garden_EventScript_TryMoveDayCareMan
 	@ set flags for OW daycare mons
@@ -60,3 +78,6 @@ Daycare_Garden_Text_Sign:
 	.string "while waiting for an egg to hatch.\p"
 	.string "Make sure you bring along a pokemon with\n"
 	.string "a warm body to look after the egg!$"
+
+Daycare_Garden_Text_Pokemon_Dots:
+	.string "...$"

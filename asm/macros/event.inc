@@ -2440,3 +2440,14 @@
 	.2byte \dest
 	.endm
 
+	@
+	@ Start of custom macros
+	@
+
+	@ Get daycare mons species
+	.macro getdaycarespecies varSpecies1:req varSpecies2:req
+	callnative GetDaycareSpecies
+	.2byte \varSpecies1
+	.2byte \varSpecies2
+	.endm
+

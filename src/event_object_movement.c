@@ -11056,3 +11056,22 @@ bool8 MovementActionFunc_RunSlow_Step1(struct ObjectEvent *objectEvent, struct S
     }
     return FALSE;
 }
+
+// Get species data from daycare pokemon and store it in vars
+void GetDaycareSpecies(struct ScriptContext *ctx)
+{
+    u16 varSpec[] = {ScriptReadHalfword(ctx), ScriptReadHalfword(ctx)};
+    u16 species;
+    u8 form;
+    u8 shiny;
+    s32 i;
+    for (i = 0; i < 2; i++)
+    {
+        GetMonInfo((struct Pokemon *) &gSaveBlock1Ptr->daycare.mons[i].mon, &species, &form, &shiny);
+        if (species == SPECIES_NONE)
+            break;
+
+        VarSet(varSpec[i], species);
+    }
+    gSpecialVar_Result = i;
+}
