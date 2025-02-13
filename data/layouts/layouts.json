@@ -4514,8 +4514,8 @@
     {
       "id": "LAYOUT_BED_OF_HOENN",
       "name": "BedOfHoenn_Layout",
-      "width": 64,
-      "height": 30,
+      "width": 120,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/BedOfHoenn/border.bin",
