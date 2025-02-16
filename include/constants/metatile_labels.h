@@ -449,7 +449,10 @@
 #define METATILE_RusturfTunnel_BehindWaterfall     0x267
 #define METATILE_RusturfTunnel_InFrontOfWaterfall  0x26F
 #define METATILE_RusturfTunnel_Passage             0x26C
-#define METATILE_RusturfTunnel_TopOfNotWarp        0x272
+#define METATILE_RusturfTunnel_Tunnel              0x270
+#define METATILE_RusturfTunnel_TunnelEdge          0x268
+#define METATILE_RusturfTunnel_TunnelEntrance      0x272
+#define METATILE_RusturfTunnel_TunnelEntranceTop   0x26A
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
