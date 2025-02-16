@@ -87,6 +87,12 @@ out of the activation tile.
 
 Scripts:
 Every macro meant to be called directly by events is defined in asm/macros/event.inc
+
 The "applymovement" macro requires an object ID, like OBJ_EVENT_ID_PLAYER in the case of the player, and a
 reference to a list of movement macros. The macros which can be added to the list are defined in
 asm/macros/movement.inc
+The "waitmovement" macro stops script execution until the object specified by the ID stops moving after an
+applymovement call; an ID of 0 will reference the last moved object.
+The "lock" macro prevents the player and the object that called the event from moving on their own. The macro
+"lockall" extends this restriction to all present objects. Conversely, "release" and "releaseall" resume
+movement for the corresponding objects.
