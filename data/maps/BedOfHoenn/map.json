@@ -25,27 +25,6 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 41,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_BED_OF_HOENN",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 42,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_BED_OF_HOENN",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 43,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_BED_OF_HOENN",
-      "dest_warp_id": "4"
-    },
-    {
       "x": 40,
       "y": 18,
       "elevation": 0,
@@ -58,7 +37,25 @@
     {
       "type": "trigger",
       "x": 42,
-      "y": 5,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "BedOfHoenn_EventScript_WaterfallWarp"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "BedOfHoenn_EventScript_WaterfallWarp"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 15,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

@@ -446,10 +446,10 @@
 #define METATILE_Rustboro_Door_Tan   0x22F
 
 // gTileset_RusturfTunnel
-#define METATILE_RusturfTunnel_BehindWaterfall  0x267
-#define METATILE_RusturfTunnel_Passage          0x26C
-#define METATILE_RusturfTunnel_TopOfNotWarp     0x272
-#define METATILE_RusturfTunnel_WaterfallWarp    0x26F
+#define METATILE_RusturfTunnel_BehindWaterfall     0x267
+#define METATILE_RusturfTunnel_InFrontOfWaterfall  0x26F
+#define METATILE_RusturfTunnel_Passage             0x26C
+#define METATILE_RusturfTunnel_TopOfNotWarp        0x272
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
