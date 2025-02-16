@@ -1,0 +1,92 @@
+Information about implementing trainers:
+
+Location of trainer parties data		src\data\trainer_parties.h
+Location of trainer data				src\data\trainers.h
+Location of trainer class definition	src\data\text\trainer_class_names.h
+Idk what this is						src\data\pokemon\trainer_class_lookups.h
+Something about trainer music			src\data\bard_music\trainer.h
+
+Creating pokemon for battling or gifting:
+The stats, EVs and IVs of a pokemon are specified in this order: HP ATK DEF SPE SPA SPD
+
+Information about battle frontier:
+Location of trainer data - src\data\battle_frontier\battle_frontier_trainers.h
+Something about trainer pokemon - src\data\batttle_frontier\battle_frontier\battle_frontier_trainer_mons.h
+
+Add pickable items to a map:
+Location of item ball flags - include\constants\flags.h - search for "Item ball flags"
+Location of item definitions - src\data\items.h
+pokeemerald-expansion made a function that removes the need to make a script for every single item ball, and instead
+takes the movement radius of the event for item quantity and the sight radius/berry tree ID for the item ID
+-------------------------------------------------------------------
+Location of item ball scripts - data\scripts\item_ball_scripts.inc
+-------------------------------------------------------------------
+
+Making new tileset images:
+Make tileset image in GraphicsGale, format of 4bits, each mini tile has a resolution of 4x4, tileset image can't exceed 128x256 resolution.
+Export palette if necessary
+
+Secret bases:
+Line 512 in src\secret_base.c must be adjusted whenever a new secret base MAP is added
+Function at 109 in src\secret_base.c must be adjusted whenever the placement of a PC in a secret base is changed or a new secret base MAP is added
+After creating a new secret base MAP, gMapGroup_IndoorDynamic must be reordered in data\maps\map_groups.json
+A custom field in the header tab of porymap must be added with the key "shared_scripts_map" and the value "SecretBase"
+Adjust the IDs in include\constants\secret_bases.h
+
+Animated tiles:
+Add the corresponding functions and constants between the "custom" comments in src/tileset_anims.c
+Declare the callback function in src/tileset_anims.h
+Reference the callback function in src/data/tilesets/headers.h
+Fortree bridges need the following to be added to the map's dedicated scripts:
+MapName_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, MapName_OnResume
+	.byte 0
+
+MapName_OnResume:
+	setstepcallback STEP_CB_FORTREE_BRIDGE
+	end
+
+Adding map sections and names:
+Define the map section's ID past line 217 in include/constants/region_map_sections.h
+Declare the map section's string past line 206 in src/data/region_map/region_map_entries.h then
+add a region map entry further down. Locations that won't show up on the ingame region map use
+coordinates 0 0 and size 1 1.
+Map de location's ID to a popup theme past line 189 in src/map_name_popup.c
+Add an entry to src/data/region_map/region_map_sections.json
+
+Importing maps from another ROM:
+Copy the contents of the map's folder in data/layouts and data/maps
+Add the map to a group in data/maps/map_groups.json
+Add an entry for the map in data/layouts/layouts.json
+Add ".include" sentences for the scripts file of the map in data/event_scripts.s
+Be aware that warp events can lose their target and item/trainer flags may not exist in the receiver rom
+
+Items:
+BAG_TMHM_COUNT in include/constants/global.h must be adjusted for proper display of TMs/HMs in inventory screen and save memory allocation
+Item struct file						src\data\items.h
+Item ID definition file					include\constants\items.h
+Association between TMs/HMs and moves	src\data\party_menu.h
+
+Object event sprites:
+ID definitions 					include/constants/event_object.h
+Graphics pointers and info		data/object_events/object_event_graphics_info_pointers.h
+								data/object_events/object_event_graphics_info.h
+Frame table						data/object_events/object_event_pic_tables.h
+Graphics paths					data/object_events/object_event_graphics.h
+Animations						data/object_events/object_event_anims.h
+
+Free up memory:
+In /include/config/pokemon.h there's an option to compress overworld sprites, freeing up a lot of ROM
+but increasing VRAM use, which means not many pokemon can be displayed at once in the overworld.
+
+Triggers:
+Every trigger needs a variable assigned to it in porymap with a specified value. If the var has that
+value when the player steps into the trigger, it will activate. The value must be set to something else
+within the trigger's script to stop it from triggering every frame, or the player must be forcefully moved
+out of the activation tile.
+
+Scripts:
+Every macro meant to be called directly by events is defined in asm/macros/event.inc
+The "applymovement" macro requires an object ID, like OBJ_EVENT_ID_PLAYER in the case of the player, and a
+reference to a list of movement macros. The macros which can be added to the list are defined in
+asm/macros/movement.inc
