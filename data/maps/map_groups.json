@@ -636,7 +636,9 @@
     "Route106_South",
     "Route107_North",
     "Route115_West",
-    "Daycare_Garden"
+    "Daycare_Garden",
+    "Route113_South",
+    "Route113_Ledge"
   ],
   "gMapGroup_NewDungeons": [
     "LittlerootCave",
@@ -653,6 +655,8 @@
     "AbandonedResort",
     "AbandonedResort1F_SouthwestRooms",
     "VictoryRoad_2F",
-    "VictoryRoad_Summit"
+    "VictoryRoad_Summit",
+    "FieryPath_1F_2",
+    "MtChimney_North"
   ]
 }

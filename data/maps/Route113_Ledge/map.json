@@ -1,0 +1,40 @@
+{
+  "id": "MAP_ROUTE113_LEDGE",
+  "name": "Route113_Ledge",
+  "layout": "LAYOUT_ROUTE113_LEDGE",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_ROUTE_113",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE113_SOUTH",
+      "offset": 2,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_1F_2",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

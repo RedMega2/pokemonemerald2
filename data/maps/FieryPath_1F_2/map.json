@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FIERY_PATH_2F",
-  "name": "FieryPath_2F",
-  "layout": "LAYOUT_FIERY_PATH_2F",
+  "id": "MAP_FIERY_PATH_1F_2",
+  "name": "FieryPath_1F_2",
+  "layout": "LAYOUT_FIERY_PATH_1F_2",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FIERY_PATH",
   "requires_flash": false,
@@ -18,24 +18,17 @@
   ],
   "warp_events": [
     {
-      "x": 39,
-      "y": 52,
+      "x": 15,
+      "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_FIERY_PATH_2F",
+      "dest_warp_id": "1"
     },
     {
       "x": 3,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_1F_2",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 32,
-      "y": 2,
-      "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_2F",
+      "dest_map": "MAP_ROUTE113_LEDGE",
       "dest_warp_id": "0"
     }
   ],

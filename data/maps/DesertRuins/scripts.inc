@@ -81,6 +81,6 @@ DesertRuins_EventScript_DefeatedRegirock::
 
 DesertRuins_EventScript_RanFromRegirock::
 	setvar VAR_0x8004, SPECIES_REGIROCK
-	goto Common_EventScript_LegendaryFlewAway
+	goto Common_EventScript_LegendaryRanAway
 	end
 

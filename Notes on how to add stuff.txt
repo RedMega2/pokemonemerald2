@@ -93,6 +93,75 @@ applymovement call; an ID of 0 will reference the last moved object.
 The "lock" macro prevents the player and the object that called the event from moving on their own. The macro
 "lockall" extends this restriction to all present objects. Conversely, "release" and "releaseall" resume
 movement for the corresponding objects.
+
+To add New Legendary Encounters this are the required scripts: (YourLegendary being whatever Pokemon you want, and Map being the map you are playing the script in)
+
+Map_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Map_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, Map_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, Map_OnLoad //If needed
+	.byte 0
+
+Map_OnResume:
+	setstepcallback STEP_CB_ASH
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Map_EventScript_TryRemoveYourLegendary
+	end
+
+Map_EventScript_TryRemoveYourLegendary::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+Map_OnTransition:
+	call_if_set FLAG_CAUGHT_YOURLEGENDARY, Map_EventScript_HideYourLegendary
+	call_if_unset FLAG_CAUGHT_YOURLEGENDARY, Map_EventScript_TryShowYourLegendary
+	end
+
+Map_EventScript_HideYourLegendary::
+	setflag FLAG_HIDE_YOURLEGENDARY
+	return
+
+Map_EventScript_TryShowYourLegendary::
+	goto_if_set FLAG_DEFEATED_ENTEI, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_YOURLEGENDARY
+	return
+
+Map_EventScript_YourLegendary:: //Here you design the sequence before the encounter and the transition and song played during the battle.
+	//Before the battle
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_YOURLEGENDARY, CRY_MODE_ENCOUNTER
+	delay 20
+	waitmoncry
+	//The pokemon you want to battle and the level
+	setwildbattle SPECIES_YOURLEGENDARY, (Level)
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	//After the battle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Map_EventScript_DefeatedYourLegendary
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Map_EventScript_RanFromYourLegendary
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Map_EventScript_RanFromYourLegendary
+	setflag FLAG_DEFEATED_YOURLEGENDARY
+	release
+	end
+
+Map_EventScript_DefeatedYourLegendary::
+	setflag FLAG_DEFEATED_YOURLEGENDARY
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+Map_EventScript_RanFromYourLegendary::
+	setvar VAR_0x8004, SPECIES_YOURLEGENDARY
+	goto Common_EventScript_LegendaryFlewAway/LegendaryRanAway //Choose either one depending on what suits best for your Pokemon
+	end
+
+Add your encounter to BattleSetup_StartLegendaryBattle in \src\battle_setup.c to choose the transition and song.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Items:
 BAG_TMHM_COUNT in include/constants/global.h must be adjusted for proper display of TMs/HMs in inventory screen and save memory allocation

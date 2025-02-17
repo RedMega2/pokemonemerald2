@@ -1230,9 +1230,9 @@
 #define FLAG_ITEM_ROUTE_102_CHOICE_BAND                         0x494
 #define FLAG_ITEM_ROUTE_102_ANTIDOTE                      		0x495
 #define FLAG_ITEM_ROUTE_104_WEST_PARALYZE_HEAL                  0x496
-#define FLAG_ITEM_497                                           0x497
-#define FLAG_ITEM_498                                           0x498
-#define FLAG_ITEM_499                                           0x499
+#define FLAG_ITEM_497             	                          	0x497
+#define FLAG_ITEM_498                                         	0x498
+#define FLAG_ITEM_499                                  			0x499
 #define FLAG_ITEM_49A                                           0x49A
 #define FLAG_ITEM_49B                                           0x49B
 #define FLAG_ITEM_49C                                           0x49C
@@ -1510,12 +1510,14 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_UNUSED_0x8E5                           (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_UNUSED_0x8E6                           (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+// New Scripts
+
+#define FLAG_CAUGHT_ENTEI                          	(SYSTEM_FLAGS + 0x85) // Unused Flag
+#define FLAG_HIDE_ENTEI                          	(SYSTEM_FLAGS + 0x86) // Unused Flag
+#define FLAG_DEFEATED_ENTEI                         (SYSTEM_FLAGS + 0x87) // Unused Flag
+#define FLAG_CAUGHT_MOLTRES                         (SYSTEM_FLAGS + 0x88) // Unused Flag
+#define FLAG_HIDE_MOLTRES                           (SYSTEM_FLAGS + 0x89) // Unused Flag
+#define FLAG_DEFEATED_MOLTRES                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
