@@ -1236,3 +1236,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GraniteCave_Ladder_5F/scripts.inc"
 
 	.include "data/maps/GraniteCave_Ladder_6F/scripts.inc"
+
+	.include "data/maps/FortreeBasin/scripts.inc"

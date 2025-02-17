@@ -2,7 +2,7 @@
   "id": "MAP_BED_OF_HOENN",
   "name": "BedOfHoenn",
   "layout": "LAYOUT_BED_OF_HOENN",
-  "music": "MUS_CAVE_OF_ORIGIN",
+  "music": "MUS_RG_VIRIDIAN_FOREST",
   "region_map_section": "MAPSEC_BED_OF_HOENN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
