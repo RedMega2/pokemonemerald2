@@ -1222,3 +1222,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FieryPath_1F_2/scripts.inc"
 
 	.include "data/maps/MtChimney_North/scripts.inc"
+
+	.include "data/maps/FieryPath_3F/scripts.inc"

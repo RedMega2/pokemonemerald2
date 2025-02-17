@@ -4750,6 +4750,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtChimney_North/border.bin",
       "blockdata_filepath": "data/layouts/MtChimney_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIERY_PATH_3F",
+      "name": "FieryPath_3F_Layout",
+      "width": 20,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FieryPath_3F/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_3F/map.bin"
     }
   ]
 }
