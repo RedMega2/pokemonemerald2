@@ -1222,3 +1222,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FieryPath_1F_2/scripts.inc"
 
 	.include "data/maps/MtChimney_North/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_1F/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_2F/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_3F/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_4F/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_5F/scripts.inc"
+
+	.include "data/maps/GraniteCave_Ladder_6F/scripts.inc"

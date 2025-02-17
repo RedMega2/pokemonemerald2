@@ -657,6 +657,12 @@
     "VictoryRoad_2F",
     "VictoryRoad_Summit",
     "FieryPath_1F_2",
-    "MtChimney_North"
+    "MtChimney_North",
+    "GraniteCave_Ladder_1F",
+    "GraniteCave_Ladder_2F",
+    "GraniteCave_Ladder_3F",
+    "GraniteCave_Ladder_4F",
+    "GraniteCave_Ladder_5F",
+    "GraniteCave_Ladder_6F"
   ]
 }

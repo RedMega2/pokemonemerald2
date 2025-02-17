@@ -4750,6 +4750,66 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtChimney_North/border.bin",
       "blockdata_filepath": "data/layouts/MtChimney_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_1F",
+      "name": "GraniteCave_Ladder_1F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_2F",
+      "name": "GraniteCave_Ladder_2F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_2F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_3F",
+      "name": "GraniteCave_Ladder_3F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_3F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_4F",
+      "name": "GraniteCave_Ladder_4F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_4F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_5F",
+      "name": "GraniteCave_Ladder_5F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_5F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_5F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRANITE_CAVE_LADDER_6F",
+      "name": "GraniteCave_Ladder_6F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/GraniteCave_Ladder_6F/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteCave_Ladder_6F/map.bin"
     }
   ]
 }

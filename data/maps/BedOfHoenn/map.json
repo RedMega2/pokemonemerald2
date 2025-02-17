@@ -126,8 +126,8 @@
       "x": 20,
       "y": 54,
       "elevation": 0,
-      "dest_map": "MAP_BED_OF_HOENN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_GRANITE_CAVE_LADDER_6F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
