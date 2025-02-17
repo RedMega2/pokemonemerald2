@@ -12498,9 +12498,12 @@
         },
         {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "map": "MAP_BED_OF_HOENN",
           "base_label": "gBedOfHoenn0",
 =======
+=======
+>>>>>>> Stashed changes
           "map": "MAP_ROUTE113_SOUTH",
           "base_label": "gRoute113_South0",
           "land_mons": {
@@ -12641,11 +12644,15 @@
         {
           "map": "MAP_FIERY_PATH_1F_2",
           "base_label": "gFieryPath_1F_20",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                 "min_level": 14,
                 "max_level": 19,
@@ -12821,6 +12828,8 @@
                 "max_level": 54,
                 "species": "SPECIES_MILOTIC"
 =======
+=======
+>>>>>>> Stashed changes
                 "min_level": 46,
                 "max_level": 49,
                 "species": "SPECIES_CAMERUPT"
@@ -12948,6 +12957,9 @@
                 "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_KANGASKHAN"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               }
             ]
