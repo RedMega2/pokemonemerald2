@@ -744,8 +744,8 @@
 #define FLAG_HIDDEN_ITEM_2B7  0x2B7
 #define FLAG_HIDDEN_ITEM_2B8  0x2B8
 #define FLAG_HIDDEN_ITEM_2B9  0x2B9
-#define FLAG_HIDDEN_ITEM_2BA  0x2BA
-#define FLAG_HIDDEN_ITEM_2BB  0x2BB
+#define FLAG_HIDDEN_ITEM_BED_OF_HOENN_RARE_CANDY2  0x2BA
+#define FLAG_HIDDEN_ITEM_BED_OF_HOENN_RARE_CANDY1  0x2BB
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -1318,7 +1318,7 @@
 #define FLAG_ITEM_4EC                                           0x4EC
 #define FLAG_ITEM_4ED                                           0x4ED
 #define FLAG_ITEM_4EE                                           0x4EE
-#define FLAG_ITEM_4EF                                           0x4EF
+#define FLAG_ITEM_BED_OF_HOENN_ULTRA_BALL                       0x4EF
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
