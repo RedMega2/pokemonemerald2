@@ -14,19 +14,86 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 43,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MAGMARIZER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FIERY_PATH_3F_MAGMARIZER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 26,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FIERY_PATH_3F_PLACEHOLDER"
+    }
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 34,
+      "x": 3,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 42,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 43,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 30,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 3,
+      "y": 36,
       "elevation": 0,
       "dest_map": "MAP_FIERY_PATH_2F",
       "dest_warp_id": "2"
     },
     {
-      "x": 16,
-      "y": 4,
+      "x": 17,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MT_CHIMNEY_NORTH",
       "dest_warp_id": "0"

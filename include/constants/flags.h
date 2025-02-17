@@ -1230,10 +1230,10 @@
 #define FLAG_ITEM_ROUTE_102_CHOICE_BAND                         0x494
 #define FLAG_ITEM_ROUTE_102_ANTIDOTE                      		0x495
 #define FLAG_ITEM_ROUTE_104_WEST_PARALYZE_HEAL                  0x496
-#define FLAG_ITEM_497             	                          	0x497
-#define FLAG_ITEM_498                                         	0x498
-#define FLAG_ITEM_499                                  			0x499
-#define FLAG_ITEM_49A                                           0x49A
+#define FLAG_ITEM_FIERY_PATH_1F2_PLACEHOLDER       				0x497
+#define FLAG_ITEM_FIERY_PATH_2F_PLACEHOLDER                     0x498
+#define FLAG_ITEM_FIERY_PATH_3F_PLACEHOLDER           			0x499
+#define FLAG_ITEM_FIERY_PATH_3F_MAGMARIZER                      0x49A
 #define FLAG_ITEM_49B                                           0x49B
 #define FLAG_ITEM_49C                                           0x49C
 #define FLAG_ITEM_49D                                           0x49D

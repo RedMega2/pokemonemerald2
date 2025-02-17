@@ -1168,8 +1168,16 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LittlerootCave/scripts.inc"
 
 	.include "data/maps/Route103_North/scripts.inc"
+	
+	.include "data/maps/FieryPath_1F_2/scripts.inc"
 
 	.include "data/maps/FieryPath_2F/scripts.inc"
+	
+	.include "data/maps/FieryPath_3F/scripts.inc"
+	
+	.include "data/maps/FieryPath_3F_2/scripts.inc"
+	
+	.include "data/maps/MtChimney_North/scripts.inc"
 
 	.include "data/maps/MeteorFalls_1F_1R_East/scripts.inc"
 
@@ -1219,12 +1227,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route113_Ledge/scripts.inc"
 
-	.include "data/maps/FieryPath_1F_2/scripts.inc"
-
-	.include "data/maps/MtChimney_North/scripts.inc"
-
-	.include "data/maps/FieryPath_3F/scripts.inc"
-
 	.include "data/maps/GraniteCave_Ladder_1F/scripts.inc"
 
 	.include "data/maps/GraniteCave_Ladder_2F/scripts.inc"
@@ -1238,3 +1240,4 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GraniteCave_Ladder_6F/scripts.inc"
 
 	.include "data/maps/FortreeBasin/scripts.inc"
+

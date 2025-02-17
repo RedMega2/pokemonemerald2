@@ -3,7 +3,7 @@
   "name": "AbandonedResort1F_SouthwestRooms",
   "layout": "LAYOUT_ABANDONED_RESORT1F_SOUTHWEST_ROOMS",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ABANDONED_RESORT",
+  "region_map_section": "MAPSEC_ROUTE_106",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

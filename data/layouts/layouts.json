@@ -4734,8 +4734,8 @@
     {
       "id": "LAYOUT_FIERY_PATH_1F_2",
       "name": "FieryPath_1F_2_Layout",
-      "width": 19,
-      "height": 19,
+      "width": 32,
+      "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_1F_2/border.bin",
@@ -4754,8 +4754,8 @@
     {
       "id": "LAYOUT_FIERY_PATH_3F",
       "name": "FieryPath_3F_Layout",
-      "width": 20,
-      "height": 36,
+      "width": 47,
+      "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_3F/border.bin",
@@ -4830,6 +4830,16 @@
       "secondary_tileset": "gTileset_Forest",
       "border_filepath": "data/layouts/FortreeBasin/border.bin",
       "blockdata_filepath": "data/layouts/FortreeBasin/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIERY_PATH_3F_2",
+      "name": "FieryPath_3F_2_Layout",
+      "width": 47,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FieryPath_3F_2/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_3F_2/map.bin"
     }
   ]
 }
