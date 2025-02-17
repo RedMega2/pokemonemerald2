@@ -12851,22 +12851,22 @@
               {
                 "min_level": 20,
                 "max_level": 27,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_QUAGSIRE"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_QUAGSIRE"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_QUAGSIRE"
               },
               {
                 "min_level": 43,
                 "max_level": 54,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_QUAGSIRE"
               }
             ]
           },
