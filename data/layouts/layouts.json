@@ -4524,10 +4524,10 @@
     {
       "id": "LAYOUT_PETALBURG_WOODS_EAST",
       "name": "PetalburgWoods_East_Layout",
-      "width": 17,
+      "width": 18,
       "height": 36,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Forest",
+      "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/PetalburgWoods_East/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods_East/map.bin"
     },
