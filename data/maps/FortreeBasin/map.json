@@ -2,8 +2,8 @@
   "id": "MAP_FORTREE_BASIN",
   "name": "FortreeBasin",
   "layout": "LAYOUT_FORTREE_BASIN",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_RESORT",
+  "music": "MUS_ROUTE119",
+  "region_map_section": "MAPSEC_ROUTE_119",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",
   "map_type": "MAP_TYPE_ROUTE",
@@ -58,7 +58,30 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 8,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_BASIN",
+      "dest_warp_id": "0",
+      "type": "dev_warp"
+    },
+    {
+      "x": 31,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_BASIN",
+      "dest_warp_id": "0",
+      "type": "dev_warp"
+    },
+    {
+      "x": 46,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_BASIN",
+      "dest_warp_id": "0",
+      "type": "dev_warp"
+    }
   ],
   "coord_events": [
 

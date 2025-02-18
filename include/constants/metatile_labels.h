@@ -188,12 +188,15 @@
 #define METATILE_Fallarbor_RedRockWall               0x269
 
 // gTileset_Forest
+#define METATILE_Forest_Balcony             0x33B
 #define METATILE_Forest_BalconyLeft         0x32E
 #define METATILE_Forest_BalconyRight        0x32F
 #define METATILE_Forest_BalconyTop          0x325
 #define METATILE_Forest_NoHM                0x36D
 #define METATILE_Forest_SecretBigTreeLeft   0x2A9
 #define METATILE_Forest_SecretBigTreeRight  0x2AA
+#define METATILE_Forest_TunnelGrass         0x3B4
+#define METATILE_Forest_TunnelGrassEdge     0x3B5
 
 // gTileset_Fortree
 #define METATILE_Fortree_BalconyLeft                       0x32E
