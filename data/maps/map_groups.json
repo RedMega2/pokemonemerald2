@@ -635,15 +635,19 @@
     "Route104_West",
     "Route106_South",
     "Route107_North",
-    "Route115_West",
-    "Daycare_Garden",
     "Route113_South",
     "Route113_Ledge",
+    "Route115_West",
+    "Daycare_Garden",
     "FortreeBasin"
   ],
   "gMapGroup_NewDungeons": [
     "LittlerootCave",
+    "FieryPath_1F_2",
     "FieryPath_2F",
+    "FieryPath_3F",
+    "FieryPath_3F_2",
+    "MtChimney_North",
     "MeteorFalls_1F_1R_East",
     "MeteorFalls_Ladder_1F",
     "MeteorFalls_Ladder_2F",
@@ -657,14 +661,14 @@
     "AbandonedResort1F_SouthwestRooms",
     "VictoryRoad_2F",
     "VictoryRoad_Summit",
-    "FieryPath_1F_2",
-    "MtChimney_North",
-    "FieryPath_3F",
     "GraniteCave_Ladder_1F",
     "GraniteCave_Ladder_2F",
     "GraniteCave_Ladder_3F",
     "GraniteCave_Ladder_4F",
     "GraniteCave_Ladder_5F",
-    "GraniteCave_Ladder_6F"
+    "GraniteCave_Ladder_6F",
+    "RusturfTunnel_2F",
+    "RusturfTunnel_3F",
+    "RusturfTunnel_South"
   ]
 }

@@ -12,3 +12,9 @@ FieryPath_EventScript_MoveScottToFallarbor::
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 	return
 
+FieryPath_EventScript_Noxzus::
+	msgbox FieryPath_Text_Noxzus, MSGBOX_NPC
+	end
+
+FieryPath_Text_Noxzus:
+	.string "Are you the champion?$"
