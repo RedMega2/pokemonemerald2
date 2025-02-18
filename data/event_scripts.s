@@ -1241,3 +1241,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/FortreeBasin/scripts.inc"
 
+
+	.include "data/maps/RusturfTunnel_2F/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_3F/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_South/scripts.inc"

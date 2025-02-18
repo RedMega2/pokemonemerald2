@@ -4840,6 +4840,36 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_3F_2/border.bin",
       "blockdata_filepath": "data/layouts/FieryPath_3F_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_2F",
+      "name": "RusturfTunnel_2F_Layout",
+      "width": 40,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_3F",
+      "name": "RusturfTunnel_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_3F/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_SOUTH",
+      "name": "RusturfTunnel_South_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/RusturfTunnel_South/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_South/map.bin"
     }
   ]
 }
