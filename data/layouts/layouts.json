@@ -4824,8 +4824,8 @@
     {
       "id": "LAYOUT_FORTREE_BASIN",
       "name": "FortreeBasin_Layout",
-      "width": 40,
-      "height": 60,
+      "width": 55,
+      "height": 58,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Forest",
       "border_filepath": "data/layouts/FortreeBasin/border.bin",

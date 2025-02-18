@@ -22,6 +22,11 @@
       "map": "MAP_FORTREE_CITY",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_FORTREE_BASIN",
+      "offset": 20,
+      "direction": "right"
     }
   ],
   "object_events": [

@@ -188,10 +188,17 @@
 #define METATILE_Fallarbor_RedRockWall               0x269
 
 // gTileset_Forest
+#define METATILE_Forest_BalconyLeft         0x32E
+#define METATILE_Forest_BalconyRight        0x32F
+#define METATILE_Forest_BalconyTop          0x325
+#define METATILE_Forest_NoHM                0x36D
 #define METATILE_Forest_SecretBigTreeLeft   0x2A9
 #define METATILE_Forest_SecretBigTreeRight  0x2AA
 
 // gTileset_Fortree
+#define METATILE_Fortree_BalconyLeft                       0x32E
+#define METATILE_Fortree_BalconyRight                      0x32F
+#define METATILE_Fortree_BalconyTop                        0x325
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F
 #define METATILE_Fortree_BridgeOverGrass_Raised            0x24E
 #define METATILE_Fortree_BridgeOverTrees_Lowered           0x257
