@@ -118,9 +118,9 @@
       "x": 40,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_BED_OF_HOENN",
+      "dest_map": "MAP_FORTREE_BASIN",
       "dest_warp_id": "0",
-      "type": "SurfDismount"
+      "type": "waterfall_warp"
     },
     {
       "x": 20,

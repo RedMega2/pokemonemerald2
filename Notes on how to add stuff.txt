@@ -44,8 +44,10 @@ Define the map section's ID past line 217 in include/constants/region_map_sectio
 Declare the map section's string past line 206 in src/data/region_map/region_map_entries.h then
 add a region map entry further down. Locations that won't show up on the ingame region map use
 coordinates 0 0 and size 1 1.
-Map de location's ID to a popup theme past line 189 in src/map_name_popup.c
+Map the location's ID to a popup theme past line 189 and further down in src/map_name_popup.c
 Add an entry to src/data/region_map/region_map_sections.json
+With the Region Map Editor in porymap, add the map section to the Map Layout if it's meant to
+show in the ingame map.
 
 Importing maps from another ROM:
 Copy the contents of the map's folder in data/layouts and data/maps

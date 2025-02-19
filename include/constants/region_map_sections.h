@@ -216,9 +216,10 @@
 #define MAPSEC_TRAINER_HILL                 0xD4
 //custom mapsecs here
 #define MAPSEC_BED_OF_HOENN					0xD5
-#define MAPSEC_ABANDONED_RESORT				0xD6
+#define MAPSEC_FORTREE_BASIN				0xD6
+#define MAPSEC_ABANDONED_RESORT				0xD7
 //MAPSEC_NONE must always remain as the immediate last section
-#define MAPSEC_NONE                         0xD7
+#define MAPSEC_NONE                         0xD8
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
