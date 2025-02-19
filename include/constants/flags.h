@@ -1519,7 +1519,7 @@
 #define FLAG_CAUGHT_MOLTRES                         (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_HIDE_MOLTRES                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_DEFEATED_MOLTRES                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
-#define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
+#define FLAG_HIDE_OLD_AMBER_FOSSIL                  (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
