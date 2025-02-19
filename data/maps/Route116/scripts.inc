@@ -206,6 +206,7 @@ Route116_EventScript_GlassesManExitEast::
 
 Route116_Movement_GlassesManExit:
 	walk_left
+	walk_down
 	walk_left
 	walk_left
 	walk_left
@@ -217,7 +218,7 @@ Route116_Movement_GlassesManExit:
 	step_end
 
 Route116_Movement_GlassesManExitEast:
-	walk_up
+	walk_down
 	walk_left
 	walk_left
 	walk_left

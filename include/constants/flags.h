@@ -1234,7 +1234,7 @@
 #define FLAG_ITEM_FIERY_PATH_2F_PLACEHOLDER                     0x498
 #define FLAG_ITEM_FIERY_PATH_3F_PLACEHOLDER           			0x499
 #define FLAG_ITEM_FIERY_PATH_3F_MAGMARIZER                      0x49A
-#define FLAG_ITEM_49B                                           0x49B
+#define FLAG_ITEM_PETALBURG_WOODS_PLACEHOLDER                   0x49B
 #define FLAG_ITEM_49C                                           0x49C
 #define FLAG_ITEM_49D                                           0x49D
 #define FLAG_ITEM_49E                                           0x49E
@@ -1391,9 +1391,10 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+//Custom Debug Flags
+#define FLAG_NO_COLLISION                         	(SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_NO_ENCOUNTER                           (SYSTEM_FLAGS + 0x22) // Unused Flag
+#define FLAG_NO_TRAINER_SEE                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
