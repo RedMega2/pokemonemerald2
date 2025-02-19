@@ -12905,12 +12905,12 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 9,
+                "max_level": 10,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 9,
+                "max_level": 10,
                 "species": "SPECIES_FEEBAS"
               },
               {
@@ -13032,29 +13032,29 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_MILOTIC"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_MILOTIC"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_MILOTIC"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 54,
+                "max_level": 63,
+                "species": "SPECIES_MILOTIC"
               }
             ]
           },
@@ -13063,53 +13063,118 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 10,
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 10,
+                "species": "SPECIES_FEEBAS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 11,
+                "max_level": 19,
+                "species": "SPECIES_DRATINI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 21,
+                "max_level": 28,
+                "species": "SPECIES_QWILFISH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 21,
+                "max_level": 28,
+                "species": "SPECIES_QWILFISH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_FEEBAS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_SHARPEDO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_CARVANHA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_SHARPEDO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_SHARPEDO"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 27,
+                "max_level": 35,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 44,
+                "max_level": 52,
+                "species": "SPECIES_YANMEGA"
+              },
+              {
+                "min_level": 27,
+                "max_level": 35,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 44,
+                "max_level": 52,
+                "species": "SPECIES_YANMEGA"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
+              },
+              {
+                "min_level": 39,
+                "max_level": 45,
+                "species": "SPECIES_VENOMOTH"
               }
             ]
           }
