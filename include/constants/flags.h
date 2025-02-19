@@ -1235,7 +1235,7 @@
 #define FLAG_ITEM_FIERY_PATH_3F_PLACEHOLDER           			0x499
 #define FLAG_ITEM_FIERY_PATH_3F_MAGMARIZER                      0x49A
 #define FLAG_ITEM_PETALBURG_WOODS_PLACEHOLDER                   0x49B
-#define FLAG_ITEM_49C                                           0x49C
+#define FLAG_ITEM_LITTLEROOT_CAVE_PLACEHOLDER                   0x49C
 #define FLAG_ITEM_49D                                           0x49D
 #define FLAG_ITEM_49E                                           0x49E
 #define FLAG_ITEM_49F                                           0x49F
