@@ -4880,6 +4880,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route102_To_Route101_IsolatedHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route102_To_Route101_IsolatedHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE115_WEST_LIGHTHOUSE_HOME",
+      "name": "Route115_West_LighthouseHome_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route115_West_LighthouseHome/border.bin",
+      "blockdata_filepath": "data/layouts/Route115_West_LighthouseHome/map.bin"
     }
   ]
 }

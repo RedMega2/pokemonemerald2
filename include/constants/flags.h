@@ -1532,8 +1532,8 @@
 #define FLAG_HIDE_ARTICUNO                          (SYSTEM_FLAGS + 0x95)
 #define FLAG_DEFEATED_ARTICUNO                      (SYSTEM_FLAGS + 0x96)
 #define FLAG_HIDE_OLD_AMBER                         (SYSTEM_FLAGS + 0x97) // Aerodactyl Fossil Flag
-#define FLAG_RECEIVED_DAMP_ROCK                     (SYSTEM_FLAGS + 0x98)
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
+#define FLAG_RECEIVED_DAMP_ROCK                     (SYSTEM_FLAGS + 0x98) // Route 102 to Route 101 house
+#define FLAG_RECEIVED_SHED_SHELL                    (SYSTEM_FLAGS + 0x99) // Route 115 West house
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
 #define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag

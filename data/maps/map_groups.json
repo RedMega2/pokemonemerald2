@@ -22,6 +22,7 @@
     "gMapGroup_IndoorRoute111",
     "gMapGroup_IndoorRoute112",
     "gMapGroup_IndoorRoute114",
+	"gMapGroup_IndoorRoute115",
     "gMapGroup_IndoorRoute116",
     "gMapGroup_IndoorRoute117",
     "gMapGroup_IndoorRoute121",
@@ -319,6 +320,9 @@
     "Route114_FossilManiacsHouse",
     "Route114_FossilManiacsTunnel",
     "Route114_LanettesHouse"
+  ],
+  "gMapGroup_IndoorRoute115": [
+    "Route115_West_LighthouseHome"
   ],
   "gMapGroup_IndoorRoute116": [
     "Route116_TunnelersRestHouse"
