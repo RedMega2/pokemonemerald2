@@ -1532,7 +1532,7 @@
 #define FLAG_HIDE_ARTICUNO                          (SYSTEM_FLAGS + 0x95)
 #define FLAG_DEFEATED_ARTICUNO                      (SYSTEM_FLAGS + 0x96)
 #define FLAG_HIDE_OLD_AMBER                         (SYSTEM_FLAGS + 0x97) // Aerodactyl Fossil Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
+#define FLAG_RECEIVED_DAMP_ROCK                     (SYSTEM_FLAGS + 0x98)
 #define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag

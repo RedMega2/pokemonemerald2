@@ -4870,6 +4870,16 @@
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/RusturfTunnel_South/border.bin",
       "blockdata_filepath": "data/layouts/RusturfTunnel_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE102_TO_ROUTE101_ISOLATED_HOUSE",
+      "name": "Route102_To_Route101_IsolatedHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route102_To_Route101_IsolatedHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route102_To_Route101_IsolatedHouse/map.bin"
     }
   ]
 }
