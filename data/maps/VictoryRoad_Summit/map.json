@@ -24,8 +24,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_OLD_AMBER_FOSSIL"
+      "script": "VictoryRoad_Summit_EventScript_OldAmber",
+      "flag": "FLAG_HIDE_OLD_AMBER"
     }
   ],
   "warp_events": [

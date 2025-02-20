@@ -1240,7 +1240,7 @@
 #define FLAG_ITEM_FORTREE_BASIN_DAWN_STONE                      0x49E
 #define FLAG_ITEM_FORTREE_BASIN_CHOICE_SPECS                    0x49F
 #define FLAG_ITEM_FORTREE_BASIN_DUSK_STONE                      0x4A0
-#define FLAG_ITEM_4A1                                           0x4A1
+#define FLAG_ITEM_VICTORY_ROAD_1F_PLACEHOLDER                   0x4A1
 #define FLAG_ITEM_4A2                                           0x4A2
 #define FLAG_ITEM_4A3                                           0x4A3
 #define FLAG_ITEM_4A4                                           0x4A4
@@ -1513,25 +1513,25 @@
 
 // New Scripts
 
-#define FLAG_CAUGHT_ENTEI                          	(SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_HIDE_ENTEI                          	(SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_DEFEATED_ENTEI                         (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_CAUGHT_MOLTRES                         (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_HIDE_MOLTRES                           (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_DEFEATED_MOLTRES                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
-#define FLAG_HIDE_OLD_AMBER_FOSSIL                  (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
-#define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
-#define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_UNUSED_0x8F4                           (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
-#define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
+#define FLAG_CAUGHT_ENTEI                          	(SYSTEM_FLAGS + 0x85) // Entei Flags
+#define FLAG_HIDE_ENTEI                          	(SYSTEM_FLAGS + 0x86)
+#define FLAG_DEFEATED_ENTEI                         (SYSTEM_FLAGS + 0x87)
+#define FLAG_CAUGHT_MOLTRES                         (SYSTEM_FLAGS + 0x88) // Moltres Flags
+#define FLAG_HIDE_MOLTRES                           (SYSTEM_FLAGS + 0x89)
+#define FLAG_DEFEATED_MOLTRES                       (SYSTEM_FLAGS + 0x8A)
+#define FLAG_CAUGHT_RAIKOU      					(SYSTEM_FLAGS + 0x8B) // Raikou Flags
+#define FLAG_HIDE_RAIKOU                            (SYSTEM_FLAGS + 0x8C)
+#define FLAG_DEFEATED_RAIKOU                        (SYSTEM_FLAGS + 0x8D)
+#define FLAG_CAUGHT_ZAPDOS                          (SYSTEM_FLAGS + 0x8E) // Zapdos Flags
+#define FLAG_HIDE_ZAPDOS                            (SYSTEM_FLAGS + 0x8F)
+#define FLAG_DEFEATED_ZAPDOS                        (SYSTEM_FLAGS + 0x90)
+#define FLAG_CAUGHT_SUICUNE                         (SYSTEM_FLAGS + 0x91) // Suicune Flags
+#define FLAG_HIDE_SUICUNE                           (SYSTEM_FLAGS + 0x92)
+#define FLAG_DEFEATED_SUICUNE                       (SYSTEM_FLAGS + 0x93)
+#define FLAG_CAUGHT_ARTICUNO                        (SYSTEM_FLAGS + 0x94) // Articuno Flags
+#define FLAG_HIDE_ARTICUNO                          (SYSTEM_FLAGS + 0x95)
+#define FLAG_DEFEATED_ARTICUNO                      (SYSTEM_FLAGS + 0x96)
+#define FLAG_HIDE_OLD_AMBER                         (SYSTEM_FLAGS + 0x97) // Aerodactyl Fossil Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
 #define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
