@@ -1237,9 +1237,9 @@
 #define FLAG_ITEM_PETALBURG_WOODS_PLACEHOLDER                   0x49B
 #define FLAG_ITEM_LITTLEROOT_CAVE_PLACEHOLDER                   0x49C
 #define FLAG_ITEM_ROUTE_119_PLACEHOLDER                         0x49D
-#define FLAG_ITEM_49E                                           0x49E
-#define FLAG_ITEM_49F                                           0x49F
-#define FLAG_ITEM_4A0                                           0x4A0
+#define FLAG_ITEM_FORTREE_BASIN_DAWN_STONE                      0x49E
+#define FLAG_ITEM_FORTREE_BASIN_CHOICE_SPECS                    0x49F
+#define FLAG_ITEM_FORTREE_BASIN_DUSK_STONE                      0x4A0
 #define FLAG_ITEM_4A1                                           0x4A1
 #define FLAG_ITEM_4A2                                           0x4A2
 #define FLAG_ITEM_4A3                                           0x4A3
