@@ -1168,14 +1168,14 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LittlerootCave/scripts.inc"
 
 	.include "data/maps/Route103_North/scripts.inc"
-	
-	.include "data/maps/FieryPath_1F_2/scripts.inc"
 
-	.include "data/maps/FieryPath_2F/scripts.inc"
+	.include "data/maps/FieryPath_2F_1R/scripts.inc"
 	
-	.include "data/maps/FieryPath_3F/scripts.inc"
+	.include "data/maps/FieryPath_2F_2R/scripts.inc"
 	
-	.include "data/maps/FieryPath_3F_2/scripts.inc"
+	.include "data/maps/FieryPath_3F_1R/scripts.inc"
+	
+	.include "data/maps/FieryPath_3F_2R/scripts.inc"
 	
 	.include "data/maps/MtChimney_North/scripts.inc"
 
@@ -1251,3 +1251,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route102_To_Route101_IsolatedHouse/scripts.inc"
 
 	.include "data/maps/Route115_West_LighthouseHome/scripts.inc"
+
+	.include "data/maps/FieryPath_2F_3R/scripts.inc"

@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FIERY_PATH_2F",
-  "name": "FieryPath_2F",
-  "layout": "LAYOUT_FIERY_PATH_2F",
+  "id": "MAP_FIERY_PATH_2F_1R",
+  "name": "FieryPath_2F_1R",
+  "layout": "LAYOUT_FIERY_PATH_2F_1R",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FIERY_PATH",
   "requires_flash": false,
@@ -14,12 +14,25 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_FIERY_PATH_1F_2",
+      "map": "MAP_FIERY_PATH_2F_2R",
       "offset": -14,
       "direction": "left"
     }
   ],
   "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 3,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FIERY_PATH_2F_1R_PLACEHOLDER1"
+    },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 31,
@@ -31,7 +44,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_FIERY_PATH_2F_PLACEHOLDER"
+      "flag": "FLAG_ITEM_FIERY_PATH_2F_1R_PLACEHOLDER2"
     }
   ],
   "warp_events": [
@@ -46,7 +59,7 @@
       "x": 32,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F",
+      "dest_map": "MAP_FIERY_PATH_3F_1R",
       "dest_warp_id": "6"
     }
   ],

@@ -1,28 +1,28 @@
 {
-  "id": "MAP_FIERY_PATH_1F_2",
-  "name": "FieryPath_1F_2",
-  "layout": "LAYOUT_FIERY_PATH_1F_2",
+  "id": "MAP_FIERY_PATH_2F_3R",
+  "name": "FieryPath_2F_3R",
+  "layout": "LAYOUT_FIERY_PATH_2F_3R",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FIERY_PATH",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_FIERY_PATH_2F",
-      "offset": 14,
+      "map": "MAP_FIERY_PATH_2F_2R",
+      "offset": -31,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 20,
+      "x": 14,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -31,17 +31,24 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_FIERY_PATH_1F2_PLACEHOLDER"
+      "flag": "FLAG_ITEM_FIERY_PATH_2F_3R_PLACEHOLDER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TORKOAL)",
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
-    {
-      "x": 4,
-      "y": 24,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE113_LEDGE",
-      "dest_warp_id": "0"
-    }
+
   ],
   "coord_events": [
 

@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FIERY_PATH_3F",
-  "name": "FieryPath_3F",
-  "layout": "LAYOUT_FIERY_PATH_3F",
+  "id": "MAP_FIERY_PATH_3F_1R",
+  "name": "FieryPath_3F_1R",
+  "layout": "LAYOUT_FIERY_PATH_3F_1R",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FIERY_PATH",
   "requires_flash": false,
@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_MAGMARIZER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_FIERY_PATH_3F_MAGMARIZER"
+      "flag": "FLAG_ITEM_FIERY_PATH_3F_1R_MAGMARIZER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_FIERY_PATH_3F_PLACEHOLDER"
+      "flag": "FLAG_ITEM_FIERY_PATH_3F_1R_PLACEHOLDER"
     }
   ],
   "warp_events": [
@@ -46,49 +46,49 @@
       "x": 3,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "0"
     },
     {
       "x": 32,
       "y": 25,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "2"
     },
     {
       "x": 42,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "3"
     },
     {
       "x": 43,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "4"
     },
     {
       "x": 30,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_3F_2",
+      "dest_map": "MAP_FIERY_PATH_3F_2R",
       "dest_warp_id": "5"
     },
     {
       "x": 3,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH_2F",
+      "dest_map": "MAP_FIERY_PATH_2F_1R",
       "dest_warp_id": "2"
     },
     {

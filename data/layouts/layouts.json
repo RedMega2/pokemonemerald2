@@ -4432,14 +4432,14 @@
       "blockdata_filepath": "data/layouts/Route103_North/map.bin"
     },
     {
-      "id": "LAYOUT_FIERY_PATH_2F",
-      "name": "FieryPath_2F_Layout",
+      "id": "LAYOUT_FIERY_PATH_2F_1R",
+      "name": "FieryPath_2F_1R_Layout",
       "width": 45,
       "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath_2F/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath_2F/map.bin"
+      "border_filepath": "data/layouts/FieryPath_2F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_2F_1R/map.bin"
     },
     {
       "id": "LAYOUT_METEOR_FALLS_1F_1R_EAST",
@@ -4732,14 +4732,14 @@
       "blockdata_filepath": "data/layouts/Route113_Ledge/map.bin"
     },
     {
-      "id": "LAYOUT_FIERY_PATH_1F_2",
-      "name": "FieryPath_1F_2_Layout",
+      "id": "LAYOUT_FIERY_PATH_2F_2R",
+      "name": "FieryPath_2F_2R_Layout",
       "width": 37,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath_1F_2/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath_1F_2/map.bin"
+      "border_filepath": "data/layouts/FieryPath_2F_2R/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_2F_2R/map.bin"
     },
     {
       "id": "LAYOUT_MT_CHIMNEY_NORTH",
@@ -4752,14 +4752,14 @@
       "blockdata_filepath": "data/layouts/MtChimney_North/map.bin"
     },
     {
-      "id": "LAYOUT_FIERY_PATH_3F",
-      "name": "FieryPath_3F_Layout",
+      "id": "LAYOUT_FIERY_PATH_3F_1R",
+      "name": "FieryPath_3F_1R_Layout",
       "width": 47,
       "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath_3F/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath_3F/map.bin"
+      "border_filepath": "data/layouts/FieryPath_3F_1R/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_3F_1R/map.bin"
     },
     {
       "id": "LAYOUT_GRANITE_CAVE_LADDER_1F",
@@ -4832,14 +4832,14 @@
       "blockdata_filepath": "data/layouts/FortreeBasin/map.bin"
     },
     {
-      "id": "LAYOUT_FIERY_PATH_3F_2",
-      "name": "FieryPath_3F_2_Layout",
+      "id": "LAYOUT_FIERY_PATH_3F_2R",
+      "name": "FieryPath_3F_2R_Layout",
       "width": 47,
       "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath_3F_2/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath_3F_2/map.bin"
+      "border_filepath": "data/layouts/FieryPath_3F_2R/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_3F_2R/map.bin"
     },
     {
       "id": "LAYOUT_RUSTURF_TUNNEL_2F",
@@ -4890,6 +4890,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route115_West_LighthouseHome/border.bin",
       "blockdata_filepath": "data/layouts/Route115_West_LighthouseHome/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIERY_PATH_2F_3R",
+      "name": "FieryPath_2F_3R_Layout",
+      "width": 21,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FieryPath_2F_3R/border.bin",
+      "blockdata_filepath": "data/layouts/FieryPath_2F_3R/map.bin"
     }
   ]
 }
