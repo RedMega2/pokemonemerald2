@@ -196,6 +196,13 @@ static void SurfFieldEffect_ShowMon(struct Task *);
 static void SurfFieldEffect_JumpOnSurfBlob(struct Task *);
 static void SurfFieldEffect_End(struct Task *);
 
+static void Task_LavaSurfFieldEffect(u8);
+static void LavaSurfFieldEffect_Init(struct Task *);
+static void LavaSurfFieldEffect_FieldMovePose(struct Task *);
+static void LavaSurfFieldEffect_ShowMon(struct Task *);
+static void LavaSurfFieldEffect_JumpOnSurfBlob(struct Task *);
+static void LavaSurfFieldEffect_End(struct Task *);
+
 static void SpriteCB_NPCFlyOut(struct Sprite *);
 
 static void Task_FlyOut(u8);
@@ -3112,7 +3119,7 @@ static void SurfFieldEffect_End(struct Task *task)
 
 u8 FldEff_UseLavaSurf(void)
 {
-    u8 taskId = CreateTask(Task_SurfFieldEffect, 0xff);
+    u8 taskId = CreateTask(Task_LavaSurfFieldEffect, 0xff);
     gTasks[taskId].tMonId = gFieldEffectArguments[0];
     Overworld_ClearSavedMusic();
     Overworld_ChangeMusicTo(MUS_RG_VICTORY_ROAD);
@@ -3200,8 +3207,8 @@ static void LavaSurfFieldEffect_End(struct Task *task)
         SetSurfBlob_BobState(objectEvent->fieldEffectSpriteId, BOB_PLAYER_AND_MON);
         UnfreezeObjectEvents();
         UnlockPlayerFieldControls();
-        FieldEffectActiveListRemove(FLDEFF_USE_SURF);
-        DestroyTask(FindTaskIdByFunc(Task_SurfFieldEffect));
+        FieldEffectActiveListRemove(FLDEFF_USE_LAVA_SURF);
+        DestroyTask(FindTaskIdByFunc(Task_LavaSurfFieldEffect));
     }
 }
 

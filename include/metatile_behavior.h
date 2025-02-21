@@ -122,6 +122,7 @@ bool8 MetatileBehavior_IsUnionRoomWarp(u8);
 bool8 MetatileBehavior_IsMossdeepGymWarp(u8);
 bool8 MetatileBehavior_IsSurfableFishableWater(u8);
 bool8 MetatileBehavior_IsHighFishingSpot(u8);	//custom behavior to allow fishing but not surfing
+bool8 MetatileBehavior_IsSurfableLava(u8);
 bool8 MetatileBehavior_IsMtPyreHole(u8);
 bool8 MetatileBehavior_IsCrackedFloorHole(u8);
 bool8 MetatileBehavior_IsCrackedFloor(u8);
