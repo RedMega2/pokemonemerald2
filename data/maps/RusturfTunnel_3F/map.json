@@ -18,8 +18,8 @@
   ],
   "warp_events": [
     {
-      "x": 10,
-      "y": 10,
+      "x": 15,
+      "y": 47,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL_2F",
       "dest_warp_id": "2"
