@@ -47,6 +47,7 @@ u8 GetJumpSpecialMovementAction(u32);
 bool8 PartyHasMonWithSurf(void);
 bool8 IsPlayerFacingSurfableFishableWater(void);
 bool8 IsPlayerFacingHighFishingSpot(void);	//custom function to allow fishing but not surfing
+bool8 IsPlayerFacingSurfableLava(void);
 bool8 IsPlayerSurfingNorth(void);
 void SetPlayerAvatarWatering(u8 direction);
 u8 GetPlayerAvatarFlags(void);

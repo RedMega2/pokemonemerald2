@@ -46,7 +46,7 @@
 #define MB_SEAWEED_NO_SURFACING 0x2A
 #define MB_REFLECTION_UNDER_BRIDGE 0x2B
 #define MB_HIGH_FISHING_SPOT 0x2C	//custom behavior that allows fishing but not surfing
-#define MB_UNUSED_2D 0x2D
+#define MB_SURFABLE_LAVA 0x2D	//custom behavior that allows surfing in lava
 #define MB_UNUSED_2E 0x2E
 #define MB_UNUSED_2F 0x2F
 #define MB_IMPASSABLE_EAST 0x30

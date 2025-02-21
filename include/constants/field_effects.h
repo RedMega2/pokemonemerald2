@@ -75,6 +75,9 @@
 #define FLDEFF_TRACKS_SLITHER            70
 #define FLDEFF_TRACKS_SPOT               71
 #define FLDEFF_TRACKS_BUG                72
+//custom field effects. changes in this table MUST be reflected
+//within /data/field_effect_scripts.s, both tables must have the same order
+#define FLDEFF_USE_LAVA_SURF			 73
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

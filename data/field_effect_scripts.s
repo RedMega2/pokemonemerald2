@@ -79,6 +79,7 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_TracksSlither             @ FLDEFF_TRACKS_SLITHER
 	.4byte gFieldEffectScript_TracksBug                 @ FLDEFF_TRACKS_BUG
 	.4byte gFieldEffectScript_TracksSpot                @ FLDEFF_TRACKS_SPOT
+	.4byte gFieldEffectScript_UseLavaSurf               @ FLDEFF_USE_LAVA_SURF
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -118,6 +119,10 @@ gFieldEffectScript_SurfBlob::
 
 gFieldEffectScript_UseSurf::
 	field_eff_callnative FldEff_UseSurf
+	field_eff_end
+
+gFieldEffectScript_UseLavaSurf::
+	field_eff_callnative FldEff_UseLavaSurf
 	field_eff_end
 
 gFieldEffectScript_GroundImpactDust::

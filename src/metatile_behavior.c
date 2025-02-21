@@ -1184,6 +1184,11 @@ bool8 MetatileBehavior_IsSurfableFishableWater(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior)
+{
+    return metatileBehavior == MB_SURFABLE_LAVA;
+}
+
 bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior)
 {
 	return metatileBehavior == MB_HIGH_FISHING_SPOT;

@@ -53,6 +53,10 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *, u8, u8);
 static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *, u8, u8);
 static const u8 *GetInteractedMetatileScript(struct MapPosition *, u8, u8);
 static const u8 *GetInteractedWaterScript(struct MapPosition *, u8, u8);
+
+//custom interaction scripts
+static const u8 *GetInteractedLavaScript(struct MapPosition *, u8, u8);
+
 static bool32 TrySetupDiveDownScript(void);
 static bool32 TrySetupDiveEmergeScript(void);
 static bool8 TryStartStepBasedScript(struct MapPosition *, u16, u16);
@@ -300,6 +304,11 @@ static const u8 *GetInteractionScript(struct MapPosition *position, u8 metatileB
     if (script != NULL)
         return script;
 
+	//custom interaction
+	script = GetInteractedLavaScript(position, metatileBehavior, direction);
+    if (script != NULL)
+        return script;
+
     return NULL;
 }
 
@@ -536,6 +545,23 @@ static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metati
         else
             return EventScript_CannotUseWaterfall;
     }
+    return NULL;
+}
+
+//custom interaction scripts
+static const u8 *GetInteractedLavaScript(struct MapPosition *unused1, u8 metatileBehavior, u8 direction)
+{
+    if (FlagGet(FLAG_BADGE05_GET) == TRUE && PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableLava() == TRUE)
+        return EventScript_UseLavaSurf;
+
+	/*
+    if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE)
+    {
+        if (FlagGet(FLAG_BADGE08_GET) == TRUE && IsPlayerSurfingNorth() == TRUE)
+            return EventScript_UseWaterfall;
+        else
+            return EventScript_CannotUseWaterfall;
+    }*/
     return NULL;
 }
 

@@ -3104,6 +3104,114 @@ static void SurfFieldEffect_End(struct Task *task)
 #undef tDestY
 #undef tMonId
 
+//lava surf start
+#define tState data[0]
+#define tDestX data[1]
+#define tDestY data[2]
+#define tMonId data[15]
+
+u8 FldEff_UseLavaSurf(void)
+{
+    u8 taskId = CreateTask(Task_SurfFieldEffect, 0xff);
+    gTasks[taskId].tMonId = gFieldEffectArguments[0];
+    Overworld_ClearSavedMusic();
+    Overworld_ChangeMusicTo(MUS_RG_VICTORY_ROAD);
+    return FALSE;
+}
+
+static void (*const sLavaSurfFieldEffectFuncs[])(struct Task *) = {
+    LavaSurfFieldEffect_Init,
+    LavaSurfFieldEffect_FieldMovePose,
+    LavaSurfFieldEffect_ShowMon,
+    LavaSurfFieldEffect_JumpOnSurfBlob,
+    LavaSurfFieldEffect_End,
+};
+
+static void Task_LavaSurfFieldEffect(u8 taskId)
+{
+    sLavaSurfFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
+}
+
+static void LavaSurfFieldEffect_Init(struct Task *task)
+{
+    LockPlayerFieldControls();
+    FreezeObjectEvents();
+    // Put follower into pokeball before using Surf
+    HideFollowerForFieldEffect();
+    gPlayerAvatar.preventStep = TRUE;
+    SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_SURFING);
+    PlayerGetDestCoords(&task->tDestX, &task->tDestY);
+    MoveCoords(gObjectEvents[gPlayerAvatar.objectEventId].movementDirection, &task->tDestX, &task->tDestY);
+    task->tState++;
+}
+
+static void LavaSurfFieldEffect_FieldMovePose(struct Task *task)
+{
+    struct ObjectEvent *objectEvent;
+    objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    if (!ObjectEventIsMovementOverridden(objectEvent) || ObjectEventClearHeldMovementIfFinished(objectEvent))
+    {
+        SetPlayerAvatarFieldMove();
+        ObjectEventSetHeldMovement(objectEvent, MOVEMENT_ACTION_START_ANIM_IN_DIRECTION);
+        task->tState++;
+    }
+}
+
+static void LavaSurfFieldEffect_ShowMon(struct Task *task)
+{
+    struct ObjectEvent *objectEvent;
+    objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    if (ObjectEventCheckHeldMovementStatus(objectEvent))
+    {
+        gFieldEffectArguments[0] = task->tMonId | SHOW_MON_CRY_NO_DUCKING;
+        FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+        task->tState++;
+    }
+}
+
+static void LavaSurfFieldEffect_JumpOnSurfBlob(struct Task *task)
+{
+    struct ObjectEvent *objectEvent;
+    if (!FieldEffectActiveListContains(FLDEFF_FIELD_MOVE_SHOW_MON))
+    {
+        objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+        ObjectEventSetGraphicsId(objectEvent, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_SURFING));
+        ObjectEventClearHeldMovementIfFinished(objectEvent);
+        ObjectEventSetHeldMovement(objectEvent, GetJumpSpecialMovementAction(objectEvent->movementDirection));
+        gFieldEffectArguments[0] = task->tDestX;
+        gFieldEffectArguments[1] = task->tDestY;
+        gFieldEffectArguments[2] = gPlayerAvatar.objectEventId;
+        objectEvent->fieldEffectSpriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
+        task->tState++;
+    }
+}
+
+static void LavaSurfFieldEffect_End(struct Task *task)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    struct ObjectEvent *followerObject = GetFollowerObject();
+    if (ObjectEventClearHeldMovementIfFinished(objectEvent))
+    {
+        gPlayerAvatar.preventStep = FALSE;
+        gPlayerAvatar.flags &= ~PLAYER_AVATAR_FLAG_CONTROLLABLE;
+        ObjectEventSetHeldMovement(objectEvent, GetFaceDirectionMovementAction(objectEvent->movementDirection));
+        if (followerObject)
+            ObjectEventClearHeldMovementIfFinished(followerObject);
+        SetSurfBlob_BobState(objectEvent->fieldEffectSpriteId, BOB_PLAYER_AND_MON);
+        UnfreezeObjectEvents();
+        UnlockPlayerFieldControls();
+        FieldEffectActiveListRemove(FLDEFF_USE_SURF);
+        DestroyTask(FindTaskIdByFunc(Task_SurfFieldEffect));
+    }
+}
+
+#undef tState
+#undef tDestX
+#undef tDestY
+#undef tMonId
+
+//lava surf end
+
 u8 FldEff_RayquazaSpotlight(void)
 {
     u8 i, j, k;
