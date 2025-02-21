@@ -649,6 +649,9 @@ void BattleSetup_StartLegendaryBattle(void)
 	case SPECIES_MOLTRES:
 		CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
 		break;
+	case SPECIES_MEWTWO:
+		CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_RG_VS_MEWTWO);
+		break;
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);

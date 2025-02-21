@@ -24,7 +24,7 @@ MtChimney_North_EventScript_HideMoltres::
 	return
 
 MtChimney_North_EventScript_TryShowMoltres::
-	goto_if_set FLAG_DEFEATED_ENTEI, Common_EventScript_NopReturn
+	goto_if_set FLAG_DEFEATED_MOLTRES, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_MOLTRES
 	return
 

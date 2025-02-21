@@ -4,8 +4,8 @@
   "layout": "LAYOUT_RUSTURF_TUNNEL_3F",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_RUSTURF_TUNNEL",
-  "requires_flash": false,
-  "weather": "WEATHER_FOG_HORIZONTAL",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
@@ -14,12 +14,63 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 14,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEWTWO)",
+      "x": 14,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RusturfTunnel_3F_EventScript_Mewtwo",
+      "flag": "FLAG_HIDE_MEWTWO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 14,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RusturfTunnel_3F_EventScript_Noxzus",
+      "flag": "FLAG_IS_CHAMPION"
+    }
   ],
   "warp_events": [
     {
       "x": 15,
-      "y": 47,
+      "y": 61,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL_2F",
       "dest_warp_id": "2"

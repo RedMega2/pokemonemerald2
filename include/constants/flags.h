@@ -1242,8 +1242,8 @@
 #define FLAG_ITEM_FORTREE_BASIN_CHOICE_SPECS                    0x490
 #define FLAG_ITEM_FORTREE_BASIN_DUSK_STONE                      0x4A1
 #define FLAG_ITEM_VICTORY_ROAD_1F_PLACEHOLDER                   0x4A2
-#define FLAG_ITEM_4A3                                           0x4A3
-#define FLAG_ITEM_4A4                                           0x4A4
+#define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER1                0x4A3
+#define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER2                0x4A4
 #define FLAG_ITEM_4A5                                           0x4A5
 #define FLAG_ITEM_4A6                                           0x4A6
 #define FLAG_ITEM_4A7                                           0x4A7
@@ -1534,9 +1534,9 @@
 #define FLAG_HIDE_OLD_AMBER                         (SYSTEM_FLAGS + 0x97) // Aerodactyl Fossil Flag
 #define FLAG_RECEIVED_DAMP_ROCK                     (SYSTEM_FLAGS + 0x98) // Route 102 to Route 101 house
 #define FLAG_RECEIVED_SHED_SHELL                    (SYSTEM_FLAGS + 0x99) // Route 115 West house
-#define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag
+#define FLAG_CAUGHT_MEWTWO                          (SYSTEM_FLAGS + 0x9A) // Mewtwo Flags
+#define FLAG_HIDE_MEWTWO                            (SYSTEM_FLAGS + 0x9B)
+#define FLAG_DEFEATED_MEWTWO                        (SYSTEM_FLAGS + 0x9C)
 #define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
 #define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
 #define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
