@@ -1244,7 +1244,7 @@
 #define FLAG_ITEM_VICTORY_ROAD_1F_PLACEHOLDER                   0x4A2
 #define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER1                0x4A3
 #define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER2                0x4A4
-#define FLAG_ITEM_4A5                                           0x4A5
+#define FLAG_ITEM_MAGMA_HIDEOUT_3F_1R_PLACEHOLDER               0x4A5
 #define FLAG_ITEM_4A6                                           0x4A6
 #define FLAG_ITEM_4A7                                           0x4A7
 #define FLAG_ITEM_4A8                                           0x4A8
@@ -1537,10 +1537,10 @@
 #define FLAG_CAUGHT_MEWTWO                          (SYSTEM_FLAGS + 0x9A) // Mewtwo Flags
 #define FLAG_HIDE_MEWTWO                            (SYSTEM_FLAGS + 0x9B)
 #define FLAG_DEFEATED_MEWTWO                        (SYSTEM_FLAGS + 0x9C)
-#define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
-#define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
-#define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
-#define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag
+#define FLAG_LAVA_SURFING                           (SYSTEM_FLAGS + 0x9D) // Lava Surfing Flag. Used to play the correct music when surfing on lava.
+#define FLAG_CAUGHT_JIRACHI                         (SYSTEM_FLAGS + 0x9E) // Jirachi Flags
+#define FLAG_HIDE_JIRACHI                           (SYSTEM_FLAGS + 0x9F)
+#define FLAG_DEFEATED_JIRACHI                       (SYSTEM_FLAGS + 0xA0)
 #define FLAG_UNUSED_0x901                           (SYSTEM_FLAGS + 0xA1) // Unused Flag
 #define FLAG_UNUSED_0x902                           (SYSTEM_FLAGS + 0xA2) // Unused Flag
 #define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag

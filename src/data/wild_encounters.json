@@ -10211,6 +10211,36 @@
                 "species": "SPECIES_GRAVELER"
               }
             ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 49,
+                "max_level": 52,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 49,
+                "max_level": 52,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 49,
+                "max_level": 52,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 49,
+                "max_level": 52,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 49,
+                "max_level": 52,
+                "species": "SPECIES_TORKOAL"
+              }
+            ]
           }
         },
         {
@@ -11869,7 +11899,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 49,
@@ -12733,7 +12763,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 49,
@@ -13085,7 +13115,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 49,
@@ -13876,7 +13906,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 49,

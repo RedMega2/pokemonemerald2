@@ -5,9 +5,10 @@ EventScript_UseLavaSurf::
 	setfieldeffectargument 0, VAR_RESULT
 	lockall
 	//msgbox gText_WantToUseSurf, MSGBOX_YESNO
-	//goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseSurf
+	//goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseLavaSurf
 	//msgbox gText_PlayerUsedSurf, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_LAVA_SURF
+	setflag FLAG_LAVA_SURFING
 EventScript_ReleaseUseLavaSurf::
 	releaseall
 EventScript_EndUseLavaSurf::

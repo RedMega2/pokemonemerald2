@@ -1209,13 +1209,18 @@ void Overworld_ResetMapMusic(void)
 void Overworld_PlaySpecialMapMusic(void)
 {
     u16 music = GetCurrLocationDefaultMusic();
-
+	
+	if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+		FlagClear(FLAG_LAVA_SURFING);
+	
     if (music != MUS_ABNORMAL_WEATHER && music != MUS_NONE)
     {
         if (gSaveBlock1Ptr->savedMusic)
             music = gSaveBlock1Ptr->savedMusic;
         else if (GetCurrentMapType() == MAP_TYPE_UNDERWATER)
             music = MUS_UNDERWATER;
+        else if (FlagGet(FLAG_LAVA_SURFING) && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+            music = MUS_RG_VICTORY_ROAD;
         else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
             music = MUS_SURF;
     }
@@ -1242,7 +1247,7 @@ static void TransitionMapMusic(void)
         u16 currentMusic = GetCurrentMapMusic();
         if (newMusic != MUS_ABNORMAL_WEATHER && newMusic != MUS_NONE)
         {
-            if (currentMusic == MUS_UNDERWATER || currentMusic == MUS_SURF || currentMusic == MUS_RG_VICTORY_ROAD)
+            if (currentMusic == MUS_UNDERWATER || currentMusic == MUS_SURF || FlagGet(FLAG_LAVA_SURFING))
                 return;
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
                 newMusic = MUS_SURF;

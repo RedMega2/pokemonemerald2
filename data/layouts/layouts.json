@@ -4694,10 +4694,10 @@
     {
       "id": "LAYOUT_VICTORY_ROAD_SUMMIT",
       "name": "VictoryRoad_Summit_Layout",
-      "width": 22,
-      "height": 21,
+      "width": 30,
+      "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/VictoryRoad_Summit/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_Summit/map.bin"
     },

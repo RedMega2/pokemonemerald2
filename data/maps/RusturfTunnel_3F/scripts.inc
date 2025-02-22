@@ -18,6 +18,24 @@ RusturfTunnel_3F_OnLoad:
 	call_if_unset FLAG_CAUGHT_MEWTWO, RusturfTunnel_3F_EventScript_TryShowMewtwo
 	end
 
+RusturfTunnel_3F_EventScript_OldAmber::
+	lock
+	faceplayer
+	msgbox RusturfTunnel_3F_Text_TakeOldAmber, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RusturfTunnel_3F_EventScript_LeaveOldAmber
+	giveitem ITEM_OLD_AMBER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	closemessage
+	setflag FLAG_HIDE_OLD_AMBER
+	removeobject VAR_LAST_TALKED
+	delay 30
+	end
+
+RusturfTunnel_3F_EventScript_LeaveOldAmber::
+	msgbox RusturfTunnel_3F_Text_LeftOldAmberAlone, MSGBOX_DEFAULT
+	release
+	end
+
 RusturfTunnel_3F_EventScript_HideMewtwo::
 	setflag FLAG_HIDE_MEWTWO
 	return
@@ -63,3 +81,9 @@ RusturfTunnel_3F_EventScript_Noxzus::
 
 RusturfTunnel_3F_Text_Noxzus:
 	.string "Are you the champion?$"
+
+RusturfTunnel_3F_Text_TakeOldAmber:
+	.string "Take the OLD AMBER?$"
+
+RusturfTunnel_3F_Text_LeftOldAmberAlone:
+	.string "{PLAYER} left the OLD AMBER alone.$"

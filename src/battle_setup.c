@@ -638,7 +638,7 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
-		//Custom
+	//Custom
 	case SPECIES_SUICUNE:
 	case SPECIES_RAIKOU:
 	case SPECIES_ENTEI:
@@ -651,6 +651,9 @@ void BattleSetup_StartLegendaryBattle(void)
 		break;
 	case SPECIES_MEWTWO:
 		CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_RG_VS_MEWTWO);
+		break;
+	case SPECIES_JIRACHI:
+		CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
 		break;
     }
 
