@@ -1254,3 +1254,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route115_West_LighthouseHome/scripts.inc"
 
 	.include "data/maps/FieryPath_2F_3R/scripts.inc"
+
+	.include "data/maps/Route116_StreamHouse/scripts.inc"

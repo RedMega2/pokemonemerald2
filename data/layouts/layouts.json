@@ -4900,6 +4900,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath_2F_3R/border.bin",
       "blockdata_filepath": "data/layouts/FieryPath_2F_3R/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE116_STREAM_HOUSE",
+      "name": "Route116_StreamHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route116_StreamHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route116_StreamHouse/map.bin"
     }
   ]
 }

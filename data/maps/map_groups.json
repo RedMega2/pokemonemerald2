@@ -325,7 +325,8 @@
     "Route115_West_LighthouseHome"
   ],
   "gMapGroup_IndoorRoute116": [
-    "Route116_TunnelersRestHouse"
+    "Route116_TunnelersRestHouse",
+    "Route116_StreamHouse"
   ],
   "gMapGroup_IndoorRoute117": [
     "Route117_PokemonDayCare"
