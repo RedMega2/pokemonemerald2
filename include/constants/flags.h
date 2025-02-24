@@ -1245,8 +1245,8 @@
 #define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER1                0x4A3
 #define FLAG_ITEM_RUSTURF_TUNNEL_3F_PLACEHOLDER2                0x4A4
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_1R_PLACEHOLDER               0x4A5
-#define FLAG_ITEM_4A6                                           0x4A6
-#define FLAG_ITEM_4A7                                           0x4A7
+#define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER1            0x4A6
+#define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER2            0x4A7
 #define FLAG_ITEM_4A8                                           0x4A8
 #define FLAG_ITEM_4A9                                           0x4A9
 #define FLAG_ITEM_4AA                                           0x4AA

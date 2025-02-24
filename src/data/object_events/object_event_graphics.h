@@ -384,6 +384,9 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_m
 
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 
+const u32 gFieldEffectObjectPic_JumpSnowGrass[] = INCBIN_U32("graphics/field_effects/pics/jump_snowgrass.4bpp");
+const u32 gFieldEffectObjectPic_SnowGrass[] = INCBIN_U32("graphics/field_effects/pics/snowgrass.4bpp");
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");
