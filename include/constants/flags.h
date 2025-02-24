@@ -663,8 +663,8 @@
 #define FLAG_HIDDEN_ITEM_LITTLEROOT_TOWN_EAST_CALCIUM  				0x266
 #define FLAG_HIDDEN_ITEM_ROUTE_104_WEST_POTION  					0x267
 #define FLAG_HIDDEN_ITEM_ROUTE_104_WEST_ESCAPE_ROPE					0x268
-#define FLAG_HIDDEN_ITEM_269  0x269
-#define FLAG_HIDDEN_ITEM_26A  0x26A
+#define FLAG_HIDDEN_ITEM_ROUTE_106_SOUTH_IRON						0x269
+#define FLAG_HIDDEN_ITEM_ROUTE_106_SOUTH_SUPER_POTION				0x26A
 #define FLAG_HIDDEN_ITEM_26B  0x26B
 #define FLAG_HIDDEN_ITEM_26C  0x26C
 #define FLAG_HIDDEN_ITEM_26D  0x26D
@@ -1247,8 +1247,8 @@
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_1R_PLACEHOLDER               0x4A5
 #define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER1            0x4A6
 #define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER2            0x4A7
-#define FLAG_ITEM_4A8                                           0x4A8
-#define FLAG_ITEM_4A9                                           0x4A9
+#define FLAG_ITEM_ROUTE_106_POKE_BALLS                          0x4A8
+#define FLAG_ITEM_ROUTE_106_PP_UP		                        0x4A9
 #define FLAG_ITEM_4AA                                           0x4AA
 #define FLAG_ITEM_4AB                                           0x4AB
 #define FLAG_ITEM_4AC                                           0x4AC
