@@ -679,6 +679,10 @@
     "GraniteCave_Ladder_6F",
     "RusturfTunnel_2F",
     "RusturfTunnel_3F",
-    "RusturfTunnel_South"
+    "RusturfTunnel_South",
+    "ShoalCave_LowTideIceRoom_2R",
+    "ShoalCave_LowTideIceRoom_3R",
+    "IceCavern_Entrance",
+    "IceCavern_OuterCave"
   ]
 }

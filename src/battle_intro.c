@@ -36,6 +36,7 @@ static const TaskFunc sBattleIntroSlideFuncs[] =
     [BATTLE_TERRAIN_CAVE]       = BattleIntroSlide1,
     [BATTLE_TERRAIN_BUILDING]   = BattleIntroSlide3,
     [BATTLE_TERRAIN_PLAIN]      = BattleIntroSlide3,
+	[BATTLE_TERRAIN_VOLCANO]	= BattleIntroSlide2,
 };
 
 void SetAnimBgAttribute(u8 bgId, u8 attributeId, u8 value)
@@ -300,6 +301,7 @@ static void BattleIntroSlide2(u8 taskId)
     switch (gTasks[taskId].tTerrain)
     {
     case BATTLE_TERRAIN_SAND:
+	case BATTLE_TERRAIN_VOLCANO:
     case BATTLE_TERRAIN_WATER:
         gBattle_BG1_X += 8;
         break;
@@ -309,6 +311,18 @@ static void BattleIntroSlide2(u8 taskId)
     }
 
     if (gTasks[taskId].tTerrain == BATTLE_TERRAIN_WATER)
+    {
+        gBattle_BG1_Y = Cos2(gTasks[taskId].data[6]) / 512 - 8;
+        if (gTasks[taskId].data[6] < 180)
+            gTasks[taskId].data[6] += 4;
+        else
+            gTasks[taskId].data[6] += 6;
+
+        if (gTasks[taskId].data[6] == 360)
+            gTasks[taskId].data[6] = 0;
+    }
+	
+    if (gTasks[taskId].tTerrain == BATTLE_TERRAIN_VOLCANO)
     {
         gBattle_BG1_Y = Cos2(gTasks[taskId].data[6]) / 512 - 8;
         if (gTasks[taskId].data[6] < 180)

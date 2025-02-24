@@ -134,6 +134,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_SIDEWAYS_STAIRS_LEFT_SIDE_BOTTOM]   = TILE_FLAG_UNUSED,
     [MB_ROCK_STAIRS]                        = TILE_FLAG_UNUSED,
     [MB_HIGH_FISHING_SPOT]                  = TILE_FLAG_UNUSED,
+    [MB_SURFABLE_LAVA]                      = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)

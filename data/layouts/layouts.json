@@ -4525,9 +4525,9 @@
       "id": "LAYOUT_PETALBURG_WOODS_EAST",
       "name": "PetalburgWoods_East_Layout",
       "width": 18,
-      "height": 36,
+      "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/PetalburgWoods_East/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods_East/map.bin"
     },
@@ -4910,6 +4910,46 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route116_StreamHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route116_StreamHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_2R",
+      "name": "ShoalCave_LowTideIceRoom_2R_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ShoalCave_LowTideIceRoom_2R/border.bin",
+      "blockdata_filepath": "data/layouts/ShoalCave_LowTideIceRoom_2R/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_3R",
+      "name": "ShoalCave_LowTideIceRoom_3R_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ShoalCave_LowTideIceRoom_3R/border.bin",
+      "blockdata_filepath": "data/layouts/ShoalCave_LowTideIceRoom_3R/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_ENTRANCE",
+      "name": "IceCavern_Entrance_Layout",
+      "width": 11,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCavern_Entrance/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_OUTER_CAVE",
+      "name": "IceCavern_OuterCave_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Snow",
+      "border_filepath": "data/layouts/IceCavern_OuterCave/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_OuterCave/map.bin"
     }
   ]
 }

@@ -1256,3 +1256,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FieryPath_2F_3R/scripts.inc"
 
 	.include "data/maps/Route116_StreamHouse/scripts.inc"
+
+	.include "data/maps/ShoalCave_LowTideIceRoom_2R/scripts.inc"
+
+	.include "data/maps/ShoalCave_LowTideIceRoom_3R/scripts.inc"
+
+	.include "data/maps/IceCavern_Entrance/scripts.inc"
+
+	.include "data/maps/IceCavern_OuterCave/scripts.inc"
