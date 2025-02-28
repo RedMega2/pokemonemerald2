@@ -62,6 +62,7 @@ enum FollowerTransformTypes
 
 #define FIGURE_8_LENGTH 72
 
+//these flags can't go over 31
 #define GROUND_EFFECT_FLAG_TALL_GRASS_ON_SPAWN   (1 << 0)
 #define GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE    (1 << 1)
 #define GROUND_EFFECT_FLAG_LONG_GRASS_ON_SPAWN   (1 << 2)

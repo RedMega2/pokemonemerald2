@@ -9465,14 +9465,17 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
 {
     typedef bool8 (*MetatileFunc)(u8);
 
+	//each function in metatileFuncs corresponds to a single flag in jumpLandingFlags,
+	//so both arrays must be ordered accordingly
     static const MetatileFunc metatileFuncs[] = {
         MetatileBehavior_IsTallGrass,
         MetatileBehavior_IsLongGrass,
         MetatileBehavior_IsPuddle,
         MetatileBehavior_IsSurfableWaterOrUnderwater,
         MetatileBehavior_IsShallowFlowingWater,
-        MetatileBehavior_IsATile,
 		MetatileBehavior_IsBeachGrass,
+		//IsATile must always go last, anything after it will never be considered
+        MetatileBehavior_IsATile,
     };
 
     static const u32 jumpLandingFlags[] = {
@@ -9481,8 +9484,8 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         GROUND_EFFECT_FLAG_LAND_IN_SHALLOW_WATER,
         GROUND_EFFECT_FLAG_LAND_IN_DEEP_WATER,
         GROUND_EFFECT_FLAG_LAND_IN_SHALLOW_WATER,
-        GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND,
 		GROUND_EFFECT_FLAG_LAND_IN_BEACH_GRASS,
+        GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND,
     };
 
     if (objEvent->landingJump && !objEvent->disableJumpLandingGroundEffect)
