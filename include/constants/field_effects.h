@@ -78,6 +78,8 @@
 //custom field effects. changes in this table MUST be reflected
 //within /data/field_effect_scripts.s, both tables must have the same order
 #define FLDEFF_USE_LAVA_SURF			 73
+#define FLDEFF_BEACH_GRASS				 74
+#define FLDEFF_JUMP_BEACH_GRASS          75
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1
@@ -119,6 +121,10 @@
 #define FLDEFFOBJ_TRACKS_SLITHER        37
 #define FLDEFFOBJ_TRACKS_SPOT           38
 #define FLDEFFOBJ_TRACKS_BUG            39
+
+//custom field effect objects
+#define FLDEFFOBJ_BEACH_GRASS           40
+#define FLDEFFOBJ_JUMP_BEACH_GRASS      41
 
 #define FLDEFF_PAL_TAG_CUT_GRASS          0x1000
 #define FLDEFF_PAL_TAG_SECRET_POWER_TREE  0x1003

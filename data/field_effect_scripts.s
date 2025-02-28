@@ -80,6 +80,8 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_TracksBug                 @ FLDEFF_TRACKS_BUG
 	.4byte gFieldEffectScript_TracksSpot                @ FLDEFF_TRACKS_SPOT
 	.4byte gFieldEffectScript_UseLavaSurf               @ FLDEFF_USE_LAVA_SURF
+	.4byte gFieldEffectScript_BeachGrass                @ FLDEFF_BEACH_GRASS
+	.4byte gFieldEffectScript_JumpBeachGrass            @ FLDEFF_JUMP_BEACH_GRASS
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -378,4 +380,12 @@ gFieldEffectScript_TracksSpot::
 
 gFieldEffectScript_TracksSlither::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect0, FldEff_TracksSlither
+	field_eff_end
+
+gFieldEffectScript_BeachGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_BeachGrass
+	field_eff_end
+
+gFieldEffectScript_JumpBeachGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_JumpBeachGrass
 	field_eff_end

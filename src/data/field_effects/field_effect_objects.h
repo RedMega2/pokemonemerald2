@@ -1336,3 +1336,68 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Rayquaza = {
 };
 
 static const struct SpritePalette sSpritePalette_Unused = {gObjectEventPal_Npc3, FLDEFF_PAL_TAG_UNKNOWN};
+
+//custom field effect objects
+static const struct SpriteFrameImage sPicTable_BeachGrass[] = {
+    overworld_frame(gFieldEffectObjectPic_BeachGrass, 2, 2, 0),
+    overworld_frame(gFieldEffectObjectPic_BeachGrass, 2, 2, 1),
+    overworld_frame(gFieldEffectObjectPic_BeachGrass, 2, 2, 2),
+    overworld_frame(gFieldEffectObjectPic_BeachGrass, 2, 2, 3),
+    overworld_frame(gFieldEffectObjectPic_BeachGrass, 2, 2, 4),
+};
+
+static const union AnimCmd sAnim_BeachGrass[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(2, 10),
+    ANIMCMD_FRAME(3, 10),
+    ANIMCMD_FRAME(4, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnimTable_BeachGrass[] =
+{
+    sAnim_BeachGrass,
+};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_BeachGrass = {
+    .tileTag = TAG_NONE,
+    .paletteTag = FLDEFF_PAL_TAG_GENERAL_1,
+    .oam = &gObjectEventBaseOam_16x16,
+    .anims = sAnimTable_BeachGrass,
+    .images = sPicTable_BeachGrass,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateBeachGrassFieldEffect,
+};
+
+static const struct SpriteFrameImage sPicTable_JumpBeachGrass[] = {
+    overworld_frame(gFieldEffectObjectPic_JumpBeachGrass, 2, 1, 0),
+    overworld_frame(gFieldEffectObjectPic_JumpBeachGrass, 2, 1, 1),
+    overworld_frame(gFieldEffectObjectPic_JumpBeachGrass, 2, 1, 2),
+    overworld_frame(gFieldEffectObjectPic_JumpBeachGrass, 2, 1, 3),
+};
+
+static const union AnimCmd sAnim_JumpBeachGrass[] =
+{
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(2, 8),
+    ANIMCMD_FRAME(3, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnimTable_JumpBeachGrass[] =
+{
+    sAnim_JumpBeachGrass,
+};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_JumpBeachGrass = {
+    .tileTag = TAG_NONE,
+    .paletteTag = FLDEFF_PAL_TAG_GENERAL_1,
+    .oam = &gObjectEventBaseOam_16x8,
+    .anims = sAnimTable_JumpBeachGrass,
+    .images = sPicTable_JumpBeachGrass,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateJumpImpactEffect,
+};

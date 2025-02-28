@@ -457,3 +457,7 @@ const u16 gObjectEventPal_BeastBall[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_strange.gbapal");
 #endif //ITEM_STRANGE_BALL
 #endif //OW_FOLLOWERS_POKEBALLS
+
+//custom object events
+const u32 gFieldEffectObjectPic_BeachGrass[] = INCBIN_U32("graphics/field_effects/pics/beach_grass.4bpp");
+const u32 gFieldEffectObjectPic_JumpBeachGrass[] = INCBIN_U32("graphics/field_effects/pics/jump_beach_grass.4bpp");

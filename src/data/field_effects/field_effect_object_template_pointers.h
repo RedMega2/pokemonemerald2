@@ -38,6 +38,9 @@ extern const struct SpriteTemplate gFieldEffectObjectTemplate_Rayquaza;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SlitherTracks;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_BugTracks;
 extern const struct SpriteTemplate gFieldEffectObjectTemplate_SpotTracks;
+//custom sprite templates
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_BeachGrass;
+extern const struct SpriteTemplate gFieldEffectObjectTemplate_JumpBeachGrass;
 
 const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     [FLDEFFOBJ_SHADOW_S]              = &gFieldEffectObjectTemplate_ShadowSmall,
@@ -80,4 +83,6 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     [FLDEFFOBJ_TRACKS_SLITHER]        = &gFieldEffectObjectTemplate_SlitherTracks,
     [FLDEFFOBJ_TRACKS_SPOT]           = &gFieldEffectObjectTemplate_SpotTracks,
     [FLDEFFOBJ_TRACKS_BUG]            = &gFieldEffectObjectTemplate_BugTracks,
+    [FLDEFFOBJ_BEACH_GRASS]           = &gFieldEffectObjectTemplate_BeachGrass,
+    [FLDEFFOBJ_JUMP_BEACH_GRASS]      = &gFieldEffectObjectTemplate_JumpBeachGrass,
 };

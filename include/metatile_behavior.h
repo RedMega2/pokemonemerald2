@@ -121,8 +121,6 @@ bool8 MetatileBehavior_IsAquaHideoutWarp(u8);
 bool8 MetatileBehavior_IsUnionRoomWarp(u8);
 bool8 MetatileBehavior_IsMossdeepGymWarp(u8);
 bool8 MetatileBehavior_IsSurfableFishableWater(u8);
-bool8 MetatileBehavior_IsHighFishingSpot(u8);	//custom behavior to allow fishing but not surfing
-bool8 MetatileBehavior_IsSurfableLava(u8);
 bool8 MetatileBehavior_IsMtPyreHole(u8);
 bool8 MetatileBehavior_IsCrackedFloorHole(u8);
 bool8 MetatileBehavior_IsCrackedFloor(u8);
@@ -167,5 +165,9 @@ bool8 MetatileBehavior_IsSidewaysStairsRightSideBottom(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSideBottom(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSidewaysStairsRightSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior);
+//custom metatile behavior
+bool8 MetatileBehavior_IsBeachGrass(u8 metatileBehavior);
+bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior);
+bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior);
 
 #endif // GUARD_METATILE_BEHAVIOR_H

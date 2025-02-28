@@ -204,6 +204,10 @@ static bool8 IsElevationMismatchAt(u8, s16, s16);
 static bool8 AreElevationsCompatible(u8, u8);
 static void CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(u16 graphicsId, u16 movementType, struct SpriteTemplate *spriteTemplate, const struct SubspriteTable **subspriteTables);
 
+//custom ground effects
+static void GetGroundEffectFlags_BeachGrassOnSpawn(struct ObjectEvent *, u32 *);
+static void GetGroundEffectFlags_BeachGrassOnBeginStep(struct ObjectEvent *, u32 *);
+
 static const struct SpriteFrameImage sPicTable_PechaBerryTree[];
 
 static void StartSlowRunningAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 direction);
@@ -9269,6 +9273,7 @@ static void GetAllGroundEffectFlags_OnSpawn(struct ObjectEvent *objEvent, u32 *f
     GetGroundEffectFlags_ShallowFlowingWater(objEvent, flags);
     GetGroundEffectFlags_ShortGrass(objEvent, flags);
     GetGroundEffectFlags_HotSprings(objEvent, flags);
+    GetGroundEffectFlags_BeachGrassOnSpawn(objEvent, flags);
 }
 
 static void GetAllGroundEffectFlags_OnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
@@ -9283,6 +9288,7 @@ static void GetAllGroundEffectFlags_OnBeginStep(struct ObjectEvent *objEvent, u3
     GetGroundEffectFlags_Puddle(objEvent, flags);
     GetGroundEffectFlags_ShortGrass(objEvent, flags);
     GetGroundEffectFlags_HotSprings(objEvent, flags);
+    GetGroundEffectFlags_BeachGrassOnBeginStep(objEvent, flags);
 }
 
 static void GetAllGroundEffectFlags_OnFinishStep(struct ObjectEvent *objEvent, u32 *flags)
@@ -9466,6 +9472,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         MetatileBehavior_IsSurfableWaterOrUnderwater,
         MetatileBehavior_IsShallowFlowingWater,
         MetatileBehavior_IsATile,
+		MetatileBehavior_IsBeachGrass,
     };
 
     static const u32 jumpLandingFlags[] = {
@@ -9475,6 +9482,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         GROUND_EFFECT_FLAG_LAND_IN_DEEP_WATER,
         GROUND_EFFECT_FLAG_LAND_IN_SHALLOW_WATER,
         GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND,
+		GROUND_EFFECT_FLAG_LAND_IN_BEACH_GRASS,
     };
 
     if (objEvent->landingJump && !objEvent->disableJumpLandingGroundEffect)
@@ -9983,6 +9991,67 @@ void GroundEffect_Seaweed(struct ObjectEvent *objEvent, struct Sprite *sprite)
     FieldEffectStart(FLDEFF_BUBBLES);
 }
 
+//custom ground effects start
+static void GetGroundEffectFlags_BeachGrassOnSpawn(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsBeachGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_BEACH_GRASS_ON_SPAWN;
+}
+
+static void GetGroundEffectFlags_BeachGrassOnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsBeachGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE;
+}
+
+void GroundEffect_SpawnOnBeachGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2; // priority
+    gFieldEffectArguments[4] = objEvent->localId << 8 | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = TRUE; // skip to end of anim
+    FieldEffectStart(FLDEFF_BEACH_GRASS);
+}
+
+void GroundEffect_StepOnBeachGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2; // priority
+    gFieldEffectArguments[4] = objEvent->localId << 8 | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = FALSE; // don't skip to end of anim
+    FieldEffectStart(FLDEFF_BEACH_GRASS);
+}
+
+void GroundEffect_JumpOnBeachGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    u8 spriteId;
+
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2;
+    FieldEffectStart(FLDEFF_JUMP_BEACH_GRASS);
+
+    spriteId = FindBeachGrassFieldEffectSpriteId(
+        objEvent->localId,
+        objEvent->mapNum,
+        objEvent->mapGroup,
+        objEvent->currentCoords.x,
+        objEvent->currentCoords.y);
+
+    if (spriteId == MAX_SPRITES)
+        GroundEffect_SpawnOnBeachGrass(objEvent, sprite);
+}
+//custom ground effects end
+
 static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct Sprite *sprite) = {
     GroundEffect_SpawnOnTallGrass,      // GROUND_EFFECT_FLAG_TALL_GRASS_ON_SPAWN
     GroundEffect_StepOnTallGrass,       // GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE
@@ -10003,7 +10072,10 @@ static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct S
     GroundEffect_JumpLandingDust,       // GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND
     GroundEffect_ShortGrass,            // GROUND_EFFECT_FLAG_SHORT_GRASS
     GroundEffect_HotSprings,            // GROUND_EFFECT_FLAG_HOT_SPRINGS
-    GroundEffect_Seaweed                // GROUND_EFFECT_FLAG_SEAWEED
+    GroundEffect_Seaweed,               // GROUND_EFFECT_FLAG_SEAWEED
+    GroundEffect_SpawnOnBeachGrass,     // GROUND_EFFECT_FLAG_BEACH_GRASS_ON_SPAWN
+    GroundEffect_StepOnBeachGrass,      // GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE
+    GroundEffect_JumpOnBeachGrass,      // GROUND_EFFECT_FLAG_LAND_IN_BEACH_GRASS
 };
 
 static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *sprite, u32 flags)
@@ -10030,7 +10102,8 @@ void filters_out_some_ground_effects(struct ObjectEvent *objEvent, u32 *flags)
                   | GROUND_EFFECT_FLAG_SHORT_GRASS
                   | GROUND_EFFECT_FLAG_SAND_PILE
                   | GROUND_EFFECT_FLAG_SHALLOW_FLOWING_WATER
-                  | GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE);
+                  | GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE
+				  | GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE);
     }
 }
 

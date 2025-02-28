@@ -135,6 +135,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_ROCK_STAIRS]                        = TILE_FLAG_UNUSED,
     [MB_HIGH_FISHING_SPOT]                  = TILE_FLAG_UNUSED,
     [MB_SURFABLE_LAVA]                      = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_BEACH_GRASS]                        = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
@@ -1185,16 +1186,6 @@ bool8 MetatileBehavior_IsSurfableFishableWater(u8 metatileBehavior)
         return FALSE;
 }
 
-bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior)
-{
-    return metatileBehavior == MB_SURFABLE_LAVA;
-}
-
-bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior)
-{
-	return metatileBehavior == MB_HIGH_FISHING_SPOT;
-}
-
 bool8 MetatileBehavior_IsMtPyreHole(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_MT_PYRE_HOLE)
@@ -1553,4 +1544,20 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
         return TRUE;
     else
         return FALSE;
+}
+
+//custom metatile behavior
+bool8 MetatileBehavior_IsBeachGrass(u8 metatileBehavior)
+{
+    return metatileBehavior == MB_BEACH_GRASS;
+}
+
+bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior)
+{
+    return metatileBehavior == MB_SURFABLE_LAVA;
+}
+
+bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior)
+{
+	return metatileBehavior == MB_HIGH_FISHING_SPOT;
 }
