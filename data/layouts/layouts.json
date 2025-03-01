@@ -4944,12 +4944,52 @@
     {
       "id": "LAYOUT_ICE_CAVERN_OUTER_CAVE",
       "name": "IceCavern_OuterCave_Layout",
-      "width": 80,
-      "height": 80,
+      "width": 64,
+      "height": 66,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/IceCavern_OuterCave/border.bin",
       "blockdata_filepath": "data/layouts/IceCavern_OuterCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_INNER_CAVE_1F",
+      "name": "IceCavern_InnerCave_1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCavern_InnerCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_InnerCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_INNER_CAVE_2F",
+      "name": "IceCavern_InnerCave_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCavern_InnerCave_2F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_InnerCave_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_LEDGE",
+      "name": "IceCavern_Ledge_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCavern_Ledge/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_Ledge/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVERN_CAVE",
+      "name": "IceCavern_Cave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCavern_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/IceCavern_Cave/map.bin"
     }
   ]
 }

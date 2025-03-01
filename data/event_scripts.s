@@ -1264,3 +1264,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IceCavern_Entrance/scripts.inc"
 
 	.include "data/maps/IceCavern_OuterCave/scripts.inc"
+
+	.include "data/maps/IceCavern_InnerCave_1F/scripts.inc"
+
+	.include "data/maps/IceCavern_InnerCave_2F/scripts.inc"
+
+	.include "data/maps/IceCavern_Ledge/scripts.inc"
+
+	.include "data/maps/IceCavern_Cave/scripts.inc"

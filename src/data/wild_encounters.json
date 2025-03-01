@@ -9733,22 +9733,22 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SHELLDER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_SHELLDER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
                 "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_REMORAID"
+                "species": "SPECIES_QWILFISH"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_QWILFISH"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_QWILFISH"
               }
             ]
           }
@@ -9827,7 +9827,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SEEL"
+                "species": "SPECIES_SLOWPOKE"
               },
               {
                 "min_level": 25,
@@ -9917,7 +9917,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SHELLDER"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 25,
