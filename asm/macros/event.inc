@@ -2090,7 +2090,7 @@
 	dofieldeffect FLDEFF_SPARKLE
 	.endm
 
-	@ Does a sparkle field effect (e.g. when the Trick Master is hiding) at the given coordinates.
+	@ Does an exclamation field effect (like the one trainers do when sighting the player) above the given object.
 	.macro dofieldeffectexclamation localid:req, mapnum:req, mapgroup:req
 	setfieldeffectargument 0, \localid
 	setfieldeffectargument 1, \mapnum
