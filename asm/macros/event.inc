@@ -2090,6 +2090,15 @@
 	dofieldeffect FLDEFF_SPARKLE
 	.endm
 
+	@ Does a sparkle field effect (e.g. when the Trick Master is hiding) at the given coordinates.
+	.macro dofieldeffectexclamation localid:req, mapnum:req, mapgroup:req
+	setfieldeffectargument 0, \localid
+	setfieldeffectargument 1, \mapnum
+	setfieldeffectargument 2, \mapgroup
+	playse SE_SELECT
+	dofieldeffect FLDEFF_EXCLAMATION_MARK_ICON
+	.endm
+
 	@ Prints a braille message, waits for an A or B press, then closes the message.
 	.macro braillemsgbox text:req
 	braillemessage \text
