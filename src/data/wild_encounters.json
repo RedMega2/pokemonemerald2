@@ -14261,6 +14261,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ABANDONED_RESORT2F",
+          "base_label": "gAbandonedResort2F0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 11,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 11,
+                "max_level": 12,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 9,
+                "max_level": 9,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_CHIMECHO"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_CHIMECHO"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_CHIMECHO"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_CHIMECHO"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_CHINGLING"
+              }
+            ]
+          }
         }
       ]
     },

@@ -2,7 +2,7 @@
   "id": "MAP_ABANDONED_RESORT1F_SOUTHWEST_ROOMS",
   "name": "AbandonedResort1F_SouthwestRooms",
   "layout": "LAYOUT_ABANDONED_RESORT1F_SOUTHWEST_ROOMS",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_RG_LAVENDER",
   "region_map_section": "MAPSEC_ABANDONED_RESORT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -19,13 +19,39 @@
       "x": 1,
       "y": 4,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 21,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ABANDONED_RESORT_SOUTHWEST_ROOMS_ETHER1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 41,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ABANDONED_RESORT_SOUTHWEST_ROOMS_ETHER2"
     }
   ],
   "warp_events": [
@@ -34,42 +60,42 @@
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "29"
+      "dest_warp_id": "22"
     },
     {
       "x": 15,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "30"
+      "dest_warp_id": "23"
     },
     {
       "x": 24,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "31"
+      "dest_warp_id": "24"
     },
     {
       "x": 33,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "32"
+      "dest_warp_id": "25"
     },
     {
       "x": 42,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "33"
+      "dest_warp_id": "26"
     },
     {
       "x": 51,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABANDONED_RESORT",
-      "dest_warp_id": "34"
+      "dest_warp_id": "27"
     }
   ],
   "coord_events": [

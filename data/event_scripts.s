@@ -1166,6 +1166,8 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
+	.include "data/scripts/custom_common_scripts.inc"
+
 	.include "data/maps/LittlerootCave/scripts.inc"
 
 	.include "data/maps/Route103_North/scripts.inc"
@@ -1272,3 +1274,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IceCavern_Ledge/scripts.inc"
 
 	.include "data/maps/IceCavern_Cave/scripts.inc"
+
+	.include "data/maps/AbandonedResort2F/scripts.inc"
+
+	.include "data/maps/AbandonedResort1F_NorthwestRooms/scripts.inc"

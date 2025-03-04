@@ -656,7 +656,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-//New hidden items
+// New hidden items
 
 #define FLAG_HIDDEN_ITEM_LITTLEROOT_TOWN_EAST_POTION				0x264
 #define FLAG_HIDDEN_ITEM_LITTLEROOT_TOWN_EAST_BIG_PEARL  			0x265
@@ -1224,7 +1224,7 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-//New item balls
+// New item balls
 
 #define FLAG_ITEM_LITTLEROOT_TOWN_EAST_SHINY_STONE              0x493
 #define FLAG_ITEM_ROUTE_102_CHOICE_BAND                         0x494
@@ -1248,11 +1248,11 @@
 #define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER1            0x4A6
 #define FLAG_ITEM_ICE_CAVERN_OUTER_CAVE_PLACEHOLDER2            0x4A7
 #define FLAG_ITEM_ROUTE_106_POKE_BALLS                          0x4A8
-#define FLAG_ITEM_ROUTE_106_PP_UP		                        0x4A9
-#define FLAG_ITEM_4AA                                           0x4AA
-#define FLAG_ITEM_4AB                                           0x4AB
-#define FLAG_ITEM_4AC                                           0x4AC
-#define FLAG_ITEM_4AD                                           0x4AD
+#define FLAG_ITEM_ROUTE_106_SOUTH_PP_UP		                    0x4A9
+#define FLAG_ITEM_ABANDONED_RESORT_SOUTHWEST_ROOMS_ETHER1       0x4AA
+#define FLAG_ITEM_ABANDONED_RESORT_SOUTHWEST_ROOMS_ETHER2       0x4AB
+#define FLAG_ITEM_ABANDONED_RESORT_NORTHWEST_ROOMS_ETHER1       0x4AC
+#define FLAG_ITEM_ABANDONED_RESORT_NORTHWEST_ROOMS_ETHER2       0x4AD
 #define FLAG_ITEM_4AE                                           0x4AE
 #define FLAG_ITEM_4AF                                           0x4AF
 #define FLAG_ITEM_4B0                                           0x4B0
@@ -1542,7 +1542,7 @@
 #define FLAG_HIDE_JIRACHI                           (SYSTEM_FLAGS + 0x9F)
 #define FLAG_DEFEATED_JIRACHI                       (SYSTEM_FLAGS + 0xA0)
 #define FLAG_ROUTE_116_HIDE_KIRLIA                  (SYSTEM_FLAGS + 0xA1)
-#define FLAG_UNUSED_0x902							(SYSTEM_FLAGS + 0xA2) // Unused Flag
+#define FLAG_ABANDONED_RESORT_1F_NORTHWEST_ROOMS_HIDE_WOMAN	(SYSTEM_FLAGS + 0xA2)
 #define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag
 #define FLAG_UNUSED_0x904                           (SYSTEM_FLAGS + 0xA4) // Unused Flag
 #define FLAG_UNUSED_0x905                           (SYSTEM_FLAGS + 0xA5) // Unused Flag

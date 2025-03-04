@@ -78,11 +78,16 @@ The object limit per map is 64, and the object limit that the game can load is a
 and thus fail to load more than 64 objects if they are located in close proximity of the connection between two maps.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Scripting::
+Storing information:
+Flags store a single bit of information (1 or 0), usually indicating that an event already took place.
+By default, all flags are unset (0) when a new save is started.
+Variables are different from flags in that they store a number instead of a single bit. Temporary
+variables reset to 0 when a map is loaded.
+
 Triggers:
 Every trigger needs a variable assigned to it in porymap with a specified value. If the var has that
 value when the player steps into the trigger, it will activate. The value must be set to something else
-within the trigger's script to stop it from triggering every frame, or the player must be forcefully moved
-out of the activation tile.
+within the trigger's script to stop it from triggering every frame.
 
 Scripts:
 Every macro meant to be called directly by events is defined in asm/macros/event.inc
@@ -95,6 +100,13 @@ applymovement call; an ID of 0 will reference the last moved object.
 The "lock" macro prevents the player and the object that called the event from moving on their own. The macro
 "lockall" extends this restriction to all present objects. Conversely, "release" and "releaseall" resume
 movement for the corresponding objects.
+The "warp" command will always take the map id first, and then it can take a warp id or a pair of
+coordinates within the destination map. "warpsilent" takes the same parameters and simply ommits playing
+a sound.
+The "setflag" macro sets the given flag (1).
+The "clearflag" macro clears the given flag (0).
+The "setvar" macro takes a variable pointer, like VAR_TEMP_0, and a value to write into that variable.
+
 
 To add New Legendary Encounters this are the required scripts: (YourLegendary being whatever Pokemon you want, and Map being the map you are playing the script in)
 

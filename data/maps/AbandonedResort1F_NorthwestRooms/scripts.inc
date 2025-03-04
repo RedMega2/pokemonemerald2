@@ -1,0 +1,16 @@
+AbandonedResort1F_NorthwestRooms_MapScripts::
+	.byte 0
+
+AbandonedResort1F_NorthwestRooms_EventScript_RunningWoman::
+	setvar VAR_TEMP_0, 1
+	goto_if_set FLAG_ABANDONED_RESORT_1F_NORTHWEST_ROOMS_HIDE_WOMAN, Common_EventScript_Ommit
+	showobjectat 1, MAP_ABANDONED_RESORT1F_NORTHWEST_ROOMS
+	applymovement 1, AbandonedResort1F_NorthwestRooms_Movement_RunningWoman
+	end
+
+AbandonedResort1F_NorthwestRooms_Movement_RunningWoman::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end

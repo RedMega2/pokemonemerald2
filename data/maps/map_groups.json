@@ -683,6 +683,8 @@
     "ShoalCave_LowTideIceRoom_2R",
     "ShoalCave_LowTideIceRoom_3R",
     "IceCavern_Entrance",
-    "IceCavern_OuterCave"
+    "IceCavern_OuterCave",
+    "AbandonedResort2F",
+    "AbandonedResort1F_NorthwestRooms"
   ]
 }

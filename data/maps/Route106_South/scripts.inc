@@ -23,11 +23,6 @@ Route106_South_EventScript_ResortIntroduction::
 	setvar VAR_ROUTE106_STATE, 1
 	lock
 	dofieldeffectexclamation 2, 4, 36
-	@ setfieldeffectargument 0, 2
-	@ setfieldeffectargument 1, 4
-	@ setfieldeffectargument 2, 36
-	@ playse SE_SELECT
-	@ dofieldeffect FLDEFF_EXCLAMATION_MARK_ICON
 	applymovement 2, Route106_South_Movement_FishermanLookAtPlayer
 	msgbox Route106_South_Text_FishermanScared, MSGBOX_NPC
 	applymovement 2, Route106_South_Movement_FishermanLookAtResort
