@@ -1278,3 +1278,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AbandonedResort2F/scripts.inc"
 
 	.include "data/maps/AbandonedResort1F_NorthwestRooms/scripts.inc"
+
+	.include "data/maps/AbandonedResort1F_SoutheastRooms/scripts.inc"
+
+	.include "data/maps/AbandonedResort1F_NortheastRooms/scripts.inc"

@@ -689,6 +689,8 @@
     "IceCavern_Ledge",
     "IceCavern_Cave",
     "AbandonedResort2F",
-    "AbandonedResort1F_NorthwestRooms"
+    "AbandonedResort1F_NorthwestRooms",
+    "AbandonedResort1F_SoutheastRooms",
+    "AbandonedResort1F_NortheastRooms"
   ]
 }

@@ -5010,6 +5010,26 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/AbandonedResort1F_NorthwestRooms/border.bin",
       "blockdata_filepath": "data/layouts/AbandonedResort1F_NorthwestRooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABANDONED_RESORT1F_SOUTHEAST_ROOMS",
+      "name": "AbandonedResort1F_SoutheastRooms_Layout",
+      "width": 54,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/AbandonedResort1F_SoutheastRooms/border.bin",
+      "blockdata_filepath": "data/layouts/AbandonedResort1F_SoutheastRooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABANDONED_RESORT1F_NORTHEAST_ROOMS",
+      "name": "AbandonedResort1F_NortheastRooms_Layout",
+      "width": 54,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/AbandonedResort1F_NortheastRooms/border.bin",
+      "blockdata_filepath": "data/layouts/AbandonedResort1F_NortheastRooms/map.bin"
     }
   ]
 }
