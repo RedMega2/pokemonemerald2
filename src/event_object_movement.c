@@ -207,6 +207,8 @@ static void CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(u16 graphics
 //custom ground effects
 static void GetGroundEffectFlags_BeachGrassOnSpawn(struct ObjectEvent *, u32 *);
 static void GetGroundEffectFlags_BeachGrassOnBeginStep(struct ObjectEvent *, u32 *);
+static void GetGroundEffectFlags_SnowGrassOnSpawn(struct ObjectEvent *, u32 *);
+static void GetGroundEffectFlags_SnowGrassOnBeginStep(struct ObjectEvent *, u32 *);
 
 static const struct SpriteFrameImage sPicTable_PechaBerryTree[];
 
@@ -9274,6 +9276,7 @@ static void GetAllGroundEffectFlags_OnSpawn(struct ObjectEvent *objEvent, u32 *f
     GetGroundEffectFlags_ShortGrass(objEvent, flags);
     GetGroundEffectFlags_HotSprings(objEvent, flags);
     GetGroundEffectFlags_BeachGrassOnSpawn(objEvent, flags);
+    GetGroundEffectFlags_SnowGrassOnSpawn(objEvent, flags);
 }
 
 static void GetAllGroundEffectFlags_OnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
@@ -9289,6 +9292,7 @@ static void GetAllGroundEffectFlags_OnBeginStep(struct ObjectEvent *objEvent, u3
     GetGroundEffectFlags_ShortGrass(objEvent, flags);
     GetGroundEffectFlags_HotSprings(objEvent, flags);
     GetGroundEffectFlags_BeachGrassOnBeginStep(objEvent, flags);
+    GetGroundEffectFlags_SnowGrassOnBeginStep(objEvent, flags);
 }
 
 static void GetAllGroundEffectFlags_OnFinishStep(struct ObjectEvent *objEvent, u32 *flags)
@@ -9474,6 +9478,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         MetatileBehavior_IsSurfableWaterOrUnderwater,
         MetatileBehavior_IsShallowFlowingWater,
 		MetatileBehavior_IsBeachGrass,
+		MetatileBehavior_IsSnowGrass,
 		//IsATile must always go last, anything after it will never be considered
         MetatileBehavior_IsATile,
     };
@@ -9485,6 +9490,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         GROUND_EFFECT_FLAG_LAND_IN_DEEP_WATER,
         GROUND_EFFECT_FLAG_LAND_IN_SHALLOW_WATER,
 		GROUND_EFFECT_FLAG_LAND_IN_BEACH_GRASS,
+		GROUND_EFFECT_FLAG_LAND_IN_SNOW_GRASS,
         GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND,
     };
 
@@ -10053,6 +10059,65 @@ void GroundEffect_JumpOnBeachGrass(struct ObjectEvent *objEvent, struct Sprite *
     if (spriteId == MAX_SPRITES)
         GroundEffect_SpawnOnBeachGrass(objEvent, sprite);
 }
+
+static void GetGroundEffectFlags_SnowGrassOnSpawn(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsSnowGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_SNOW_GRASS_ON_SPAWN;
+}
+
+static void GetGroundEffectFlags_SnowGrassOnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsSnowGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_SNOW_GRASS_ON_MOVE;
+}
+
+void GroundEffect_SpawnOnSnowGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2; // priority
+    gFieldEffectArguments[4] = objEvent->localId << 8 | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = TRUE; // skip to end of anim
+    FieldEffectStart(FLDEFF_SNOW_GRASS);
+}
+
+void GroundEffect_StepOnSnowGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2; // priority
+    gFieldEffectArguments[4] = objEvent->localId << 8 | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = FALSE; // don't skip to end of anim
+    FieldEffectStart(FLDEFF_SNOW_GRASS);
+}
+
+void GroundEffect_JumpOnSnowGrass(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    u8 spriteId;
+
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2;
+    FieldEffectStart(FLDEFF_JUMP_SNOW_GRASS);
+
+    spriteId = FindSnowGrassFieldEffectSpriteId(
+        objEvent->localId,
+        objEvent->mapNum,
+        objEvent->mapGroup,
+        objEvent->currentCoords.x,
+        objEvent->currentCoords.y);
+
+    if (spriteId == MAX_SPRITES)
+        GroundEffect_SpawnOnSnowGrass(objEvent, sprite);
+}
 //custom ground effects end
 
 static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct Sprite *sprite) = {
@@ -10079,6 +10144,9 @@ static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct S
     GroundEffect_SpawnOnBeachGrass,     // GROUND_EFFECT_FLAG_BEACH_GRASS_ON_SPAWN
     GroundEffect_StepOnBeachGrass,      // GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE
     GroundEffect_JumpOnBeachGrass,      // GROUND_EFFECT_FLAG_LAND_IN_BEACH_GRASS
+    GroundEffect_SpawnOnSnowGrass,      // GROUND_EFFECT_FLAG_SNOW_GRASS_ON_SPAWN
+    GroundEffect_StepOnSnowGrass,       // GROUND_EFFECT_FLAG_SNOW_GRASS_ON_MOVE
+    GroundEffect_JumpOnSnowGrass,       // GROUND_EFFECT_FLAG_LAND_IN_SNOW_GRASS
 };
 
 static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *sprite, u32 flags)
@@ -10106,7 +10174,8 @@ void filters_out_some_ground_effects(struct ObjectEvent *objEvent, u32 *flags)
                   | GROUND_EFFECT_FLAG_SAND_PILE
                   | GROUND_EFFECT_FLAG_SHALLOW_FLOWING_WATER
                   | GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE
-				  | GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE);
+				  | GROUND_EFFECT_FLAG_BEACH_GRASS_ON_MOVE
+				  | GROUND_EFFECT_FLAG_SNOW_GRASS_ON_MOVE);
     }
 }
 

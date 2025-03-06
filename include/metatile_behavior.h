@@ -167,6 +167,7 @@ bool8 MetatileBehavior_IsSidewaysStairsRightSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior);
 //custom metatile behavior
 bool8 MetatileBehavior_IsBeachGrass(u8 metatileBehavior);
+bool8 MetatileBehavior_IsSnowGrass(u8 metatileBehavior);
 bool8 MetatileBehavior_IsHighFishingSpot(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior);
 

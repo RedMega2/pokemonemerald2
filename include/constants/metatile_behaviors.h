@@ -48,7 +48,7 @@
 #define MB_HIGH_FISHING_SPOT 0x2C	//custom behavior that allows fishing but not surfing
 #define MB_SURFABLE_LAVA 0x2D		//custom behavior that allows surfing in lava
 #define MB_BEACH_GRASS 0x2E			//custom behavior for beach grass with wild encounters
-#define MB_UNUSED_2F 0x2F
+#define MB_SNOW_GRASS 0x2F			//custom behavior for snow grass with wild encounters
 #define MB_IMPASSABLE_EAST 0x30
 #define MB_IMPASSABLE_WEST 0x31
 #define MB_IMPASSABLE_NORTH 0x32

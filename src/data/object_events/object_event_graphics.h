@@ -384,9 +384,6 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_m
 
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 
-const u32 gFieldEffectObjectPic_JumpSnowGrass[] = INCBIN_U32("graphics/field_effects/pics/jump_snowgrass.4bpp");
-const u32 gFieldEffectObjectPic_SnowGrass[] = INCBIN_U32("graphics/field_effects/pics/snowgrass.4bpp");
-
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");
@@ -461,3 +458,8 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 //custom object events
 const u32 gFieldEffectObjectPic_BeachGrass[] = INCBIN_U32("graphics/field_effects/pics/beach_grass.4bpp");
 const u32 gFieldEffectObjectPic_JumpBeachGrass[] = INCBIN_U32("graphics/field_effects/pics/jump_beach_grass.4bpp");
+const u32 gFieldEffectObjectPic_SnowGrass[] = INCBIN_U32("graphics/field_effects/pics/snow_grass.4bpp");
+const u32 gFieldEffectObjectPic_JumpSnowGrass[] = INCBIN_U32("graphics/field_effects/pics/jump_snow_grass.4bpp");
+
+//custom palettes
+const u16 gFieldEffectObjectSnow[] = INCBIN_U16("graphics/field_effects/palettes/snow.gbapal");

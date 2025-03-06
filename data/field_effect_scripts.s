@@ -82,6 +82,8 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_UseLavaSurf               @ FLDEFF_USE_LAVA_SURF
 	.4byte gFieldEffectScript_BeachGrass                @ FLDEFF_BEACH_GRASS
 	.4byte gFieldEffectScript_JumpBeachGrass            @ FLDEFF_JUMP_BEACH_GRASS
+	.4byte gFieldEffectScript_SnowGrass                	@ FLDEFF_SNOW_GRASS
+	.4byte gFieldEffectScript_JumpSnowGrass            	@ FLDEFF_JUMP_SNOW_GRASS
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -388,4 +390,12 @@ gFieldEffectScript_BeachGrass::
 
 gFieldEffectScript_JumpBeachGrass::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect1, FldEff_JumpBeachGrass
+	field_eff_end
+
+gFieldEffectScript_SnowGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_Snow, FldEff_SnowGrass
+	field_eff_end
+
+gFieldEffectScript_JumpSnowGrass::
+	field_eff_loadfadedpal_callnative gSpritePalette_Snow, FldEff_JumpSnowGrass
 	field_eff_end

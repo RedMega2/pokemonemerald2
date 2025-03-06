@@ -80,6 +80,8 @@
 #define FLDEFF_USE_LAVA_SURF			 73
 #define FLDEFF_BEACH_GRASS				 74
 #define FLDEFF_JUMP_BEACH_GRASS          75
+#define FLDEFF_SNOW_GRASS				 76
+#define FLDEFF_JUMP_SNOW_GRASS           77
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1
@@ -125,6 +127,8 @@
 //custom field effect objects
 #define FLDEFFOBJ_BEACH_GRASS           40
 #define FLDEFFOBJ_JUMP_BEACH_GRASS      41
+#define FLDEFFOBJ_SNOW_GRASS            42
+#define FLDEFFOBJ_JUMP_SNOW_GRASS       43
 
 #define FLDEFF_PAL_TAG_CUT_GRASS          0x1000
 #define FLDEFF_PAL_TAG_SECRET_POWER_TREE  0x1003
@@ -138,5 +142,7 @@
 #define FLDEFF_PAL_TAG_SMALL_SPARKLE      0x100F
 #define FLDEFF_PAL_TAG_HOF_MONITOR        0x1010
 #define FLDEFF_PAL_TAG_UNKNOWN            0x1011
+#define FLDEFF_PAL_TAG_SNOW           	  0x1012
+
 
 #endif // GUARD_FIELD_EFFECT_CONSTANTS_H

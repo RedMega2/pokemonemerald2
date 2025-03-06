@@ -136,6 +136,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_HIGH_FISHING_SPOT]                  = TILE_FLAG_UNUSED,
     [MB_SURFABLE_LAVA]                      = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_BEACH_GRASS]                        = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_SNOW_GRASS]                         = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
@@ -1550,6 +1551,11 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 bool8 MetatileBehavior_IsBeachGrass(u8 metatileBehavior)
 {
     return metatileBehavior == MB_BEACH_GRASS;
+}
+
+bool8 MetatileBehavior_IsSnowGrass(u8 metatileBehavior)
+{
+    return metatileBehavior == MB_SNOW_GRASS;
 }
 
 bool8 MetatileBehavior_IsSurfableLava(u8 metatileBehavior)
