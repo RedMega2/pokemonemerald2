@@ -7281,7 +7281,7 @@ BattleScript_ThrashConfuses::
 	end2
 
 BattleScript_MoveUsedIsConfused::
-	printstring STRINGID_PKMNISCONFUSED
+	printstring STRINGID_EMPTYSTRING4
 	status2animation BS_ATTACKER, STATUS2_CONFUSION
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, FALSE, BattleScript_MoveUsedIsConfusedRet
 BattleScript_DoSelfConfusionDmg::
