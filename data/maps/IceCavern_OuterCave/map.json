@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 4,
-      "y": 53,
+      "y": 51,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 23,
-      "y": 41,
+      "y": 39,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -44,42 +44,42 @@
   "warp_events": [
     {
       "x": 31,
-      "y": 59,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_ENTRANCE",
       "dest_warp_id": "1"
     },
     {
       "x": 32,
-      "y": 59,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_ENTRANCE",
       "dest_warp_id": "1"
     },
     {
       "x": 30,
-      "y": 29,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_OUTER_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 18,
-      "y": 5,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_OUTER_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 58,
-      "y": 10,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_OUTER_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 47,
-      "y": 41,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVERN_OUTER_CAVE",
       "dest_warp_id": "0"

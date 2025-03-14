@@ -4945,7 +4945,7 @@
       "id": "LAYOUT_ICE_CAVERN_OUTER_CAVE",
       "name": "IceCavern_OuterCave_Layout",
       "width": 64,
-      "height": 66,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/IceCavern_OuterCave/border.bin",
