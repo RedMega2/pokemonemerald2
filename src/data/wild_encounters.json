@@ -14116,7 +14116,7 @@
             "mons": [
               {
                 "min_level": 46,
-                "max_level": 49,
+                "max_level": 50,
                 "species": "SPECIES_MAMOSWINE"
               },
               {
@@ -14131,8 +14131,8 @@
               },
               {
                 "min_level": 48,
-                "max_level": 50,
-                "species": "SPECIES_MAMOSWINE"
+                "max_level": 51,
+                "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 48,
@@ -14155,24 +14155,24 @@
                 "species": "SPECIES_DUSCLOPS"
               },
               {
-                "min_level": 49,
-                "max_level": 51,
-                "species": "SPECIES_ABSOL"
+                "min_level": 51,
+                "max_level": 52,
+                "species": "SPECIES_FROSLASS"
               },
               {
-                "min_level": 49,
-                "max_level": 51,
-                "species": "SPECIES_ABSOL"
+                "min_level": 46,
+                "max_level": 48,
+                "species": "SPECIES_DELIBIRD"
               },
               {
-                "min_level": 49,
-                "max_level": 51,
-                "species": "SPECIES_ABSOL"
+                "min_level": 52,
+                "max_level": 52,
+                "species": "SPECIES_FROSLASS"
               },
               {
-                "min_level": 49,
-                "max_level": 51,
-                "species": "SPECIES_ABSOL"
+                "min_level": 47,
+                "max_level": 49,
+                "species": "SPECIES_DELIBIRD"
               }
             ]
           },
@@ -14327,6 +14327,75 @@
                 "min_level": 8,
                 "max_level": 9,
                 "species": "SPECIES_CHINGLING"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ICE_CAVERN_CAVE",
+          "base_label": "gIceCavern_Cave0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 48,
+                "max_level": 50,
+                "species": "SPECIES_DUSCLOPS"
+              },
+              {
+                "min_level": 46,
+                "max_level": 49,
+                "species": "SPECIES_GLALIE"
+              },
+              {
+                "min_level": 48,
+                "max_level": 50,
+                "species": "SPECIES_GLALIE"
+              },
+              {
+                "min_level": 49,
+                "max_level": 51,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 48,
+                "max_level": 50,
+                "species": "SPECIES_DUSCLOPS"
+              },
+              {
+                "min_level": 49,
+                "max_level": 51,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 52,
+                "species": "SPECIES_FROSLASS"
+              },
+              {
+                "min_level": 48,
+                "max_level": 50,
+                "species": "SPECIES_DUSCLOPS"
+              },
+              {
+                "min_level": 51,
+                "max_level": 52,
+                "species": "SPECIES_FROSLASS"
+              },
+              {
+                "min_level": 52,
+                "max_level": 55,
+                "species": "SPECIES_DUSKNOIR"
+              },
+              {
+                "min_level": 52,
+                "max_level": 52,
+                "species": "SPECIES_FROSLASS"
+              },
+              {
+                "min_level": 52,
+                "max_level": 55,
+                "species": "SPECIES_DUSKNOIR"
               }
             ]
           }

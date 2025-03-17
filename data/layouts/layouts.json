@@ -4984,8 +4984,8 @@
     {
       "id": "LAYOUT_ICE_CAVERN_CAVE",
       "name": "IceCavern_Cave_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 27,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IceCavern_Cave/border.bin",
