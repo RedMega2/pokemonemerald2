@@ -14396,11 +14396,11 @@
                 "min_level": 52,
                 "max_level": 55,
                 "species": "SPECIES_DUSKNOIR"
-			  }
-			]
-		  }
-		},
-		{
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_VICTORY_ROAD_LADDER_B1F",
           "base_label": "gVictoryRoad_Ladder_B1F0",
           "land_mons": {

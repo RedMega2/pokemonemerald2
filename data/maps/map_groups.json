@@ -692,6 +692,8 @@
     "AbandonedResort1F_NorthwestRooms",
     "AbandonedResort1F_SoutheastRooms",
     "AbandonedResort1F_NortheastRooms",
-    "VictoryRoad_Ladder_B1F"
+    "VictoryRoad_Ladder_B1F",
+    "VictoryRoad_Ladder_Underwater",
+    "VictoryRoad_Ladder_Underwater_Exit"
   ]
 }

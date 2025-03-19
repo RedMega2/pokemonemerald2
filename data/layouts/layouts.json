@@ -5040,6 +5040,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/VictoryRoad_Ladder_B1F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_Ladder_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_LADDER_UNDERWATER",
+      "name": "VictoryRoad_Ladder_Underwater_Layout",
+      "width": 20,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/VictoryRoad_Ladder_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_Ladder_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_LADDER_UNDERWATER_EXIT",
+      "name": "VictoryRoad_Ladder_Underwater_Exit_Layout",
+      "width": 60,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_Exit/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_Exit/map.bin"
     }
   ]
 }

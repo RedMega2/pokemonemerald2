@@ -1,0 +1,39 @@
+{
+  "id": "MAP_VICTORY_ROAD_LADDER_UNDERWATER",
+  "name": "VictoryRoad_Ladder_Underwater",
+  "layout": "LAYOUT_VICTORY_ROAD_LADDER_UNDERWATER",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_VICTORY_ROAD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_VICTORY_ROAD_LADDER_B1F",
+      "offset": 0,
+      "direction": "emerge"
+    },
+    {
+      "map": "MAP_VICTORY_ROAD_LADDER_UNDERWATER_EXIT",
+      "offset": -3,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
