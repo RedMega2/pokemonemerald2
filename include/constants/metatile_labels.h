@@ -118,9 +118,14 @@
 #define METATILE_Building_TV_On   0x003
 
 // gTileset_Cave
+#define METATILE_Cave_CaveBehindWaterfall                0x3B8
+#define METATILE_Cave_CavePassageBottom                  0x3B2
+#define METATILE_Cave_CavePassageEdge                    0x3B1
+#define METATILE_Cave_CavePassageRoof                    0x3B0
 #define METATILE_Cave_CrackedFloor                       0x22F
 #define METATILE_Cave_CrackedFloor_Hole                  0x206
 #define METATILE_Cave_EntranceCover                      0x229
+#define METATILE_Cave_PassageArch                        0x3A8
 #define METATILE_Cave_SealedChamberBraille_Mid           0x235
 #define METATILE_Cave_SealedChamberEntrance_BottomLeft   0x232
 #define METATILE_Cave_SealedChamberEntrance_BottomMid    0x233

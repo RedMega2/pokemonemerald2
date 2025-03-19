@@ -1282,3 +1282,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AbandonedResort1F_SoutheastRooms/scripts.inc"
 
 	.include "data/maps/AbandonedResort1F_NortheastRooms/scripts.inc"
+
+	.include "data/maps/VictoryRoad_Ladder_B1F/scripts.inc"
