@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE128",
       "offset": 40,
       "direction": "left"
+    },
+    {
+      "map": "MAP_EVER_GRANDE_CITY_COAST",
+      "offset": 5,
+      "direction": "left"
     }
   ],
   "object_events": [

@@ -32,6 +32,11 @@
       "map": "MAP_UNDERWATER_ROUTE127",
       "offset": 0,
       "direction": "dive"
+    },
+    {
+      "map": "MAP_EVER_GRANDE_CITY_COAST",
+      "offset": 45,
+      "direction": "right"
     }
   ],
   "object_events": [

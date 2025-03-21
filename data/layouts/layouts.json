@@ -5060,6 +5060,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_Exit/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_Exit/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRAND_CITY_COAST",
+      "name": "EverGrandeCityCoast_Layout",
+      "width": 40,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/EverGrandeCityCoast/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCityCoast/map.bin"
     }
   ]
 }

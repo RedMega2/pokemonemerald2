@@ -17,6 +17,11 @@
       "map": "MAP_VICTORY_ROAD_LADDER_UNDERWATER",
       "offset": 3,
       "direction": "right"
+    },
+    {
+      "map": "MAP_EVER_GRANDE_CITY_COAST",
+      "offset": 0,
+      "direction": "emerge"
     }
   ],
   "object_events": [
