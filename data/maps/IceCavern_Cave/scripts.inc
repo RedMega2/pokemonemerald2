@@ -55,5 +55,5 @@ IceCavern_Cave_EventScript_DefeatedSuicune::
 
 IceCavern_Cave_EventScript_RanFromSuicune::
 	setvar VAR_0x8004, SPECIES_SUICUNE
-	goto Common_EventScript_LegendaryFlewAway
+	goto Common_EventScript_LegendaryRanAway
 	end
