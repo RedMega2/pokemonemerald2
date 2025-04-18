@@ -201,6 +201,14 @@
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 98,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
     }
   ]
 }

@@ -5070,6 +5070,16 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/EverGrandeCityCoast/border.bin",
       "blockdata_filepath": "data/layouts/EverGrandeCityCoast/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_LADDER_UNDERWATER_NORTH",
+      "name": "VictoryRoad_Ladder_Underwater_North_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_North/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_Ladder_Underwater_North/map.bin"
     }
   ]
 }

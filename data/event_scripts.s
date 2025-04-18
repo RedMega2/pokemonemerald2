@@ -1290,3 +1290,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VictoryRoad_Ladder_Underwater_Exit/scripts.inc"
 
 	.include "data/maps/EverGrandeCityCoast/scripts.inc"
+
+	.include "data/maps/VictoryRoad_Ladder_Underwater_North/scripts.inc"
